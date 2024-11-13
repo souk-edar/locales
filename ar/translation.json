@@ -3,7 +3,7 @@
     "welcomeMessage": "مرحبًا بك في فلاح الدار!",
     "nowTakingOrders": "الطلبات مفتوحة ليوم",
     "viewCatalogue": "عرض الكتالوج",
-    "yourOrderForDay": "طلبك ليوم {{day}}",
+    "yourOrderForDay": "طلبك {{day}}",
     "giveCodeToDriver": "أعطِ هذا الرمز لسائق التوصيل لتستلم طلبك",
     "ordersRemaining": "{{remaining}} طلبات متبقية من أصل {{max}}"
   },
