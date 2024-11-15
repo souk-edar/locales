@@ -1,6 +1,7 @@
 {
   "home": {
     "welcomeMessage": "Welcome to Fellah-eDar!",
+    "welcomeUserMessage": "Welcome {{name}}!",
     "nowTakingOrders": "Now taking orders for",
     "viewCatalogue": "View Catalogue",
     "yourOrderForDay": "Your {{day}}'s order",
@@ -17,9 +18,9 @@
     "requestPassword": "Request new password",
     "deleteProfile": "Delete profile",
     "addressNotFound": "Address not found",
-    "successMessage": "Success!",
+    "successTitle": "Success!",
     "passwordResetSuccess": "A password reset link was sent to your email",
-    "errorMessage": "Error",
+    "errorTitle": "Error",
     "passwordResetError": "Failed to send password reset email. Please try again"
   },
   "profile": {
@@ -70,8 +71,8 @@
     "delivery": "Delivery",
     "total": "Total",
     "proceedToCheckout": "Proceed to checkout",
-    "proceedToCheckoutError": "Error",
-    "proceedToCheckoutErrorDescription": "Your basket must contain {{MAX_ORDER_QUANTITY}} kg before you can proceed."
+    "proceedToCheckoutErrorTitle": "Error",
+    "proceedToCheckoutErrorDescription": "Your basket must contain {{maxOrderQuantity}} kg before you can proceed"
   },
   "signIn": {
     "title": "Sign in",
@@ -153,9 +154,7 @@
     "apartmentMaxLength": "Apartment must be at most 6 characters",
     "apartmentPattern": "Apartment must contain only alphanumeric characters",
     "agreementError": "Please agree to the Privacy Policy and Terms of Service to proceed",
-    "unsupportedRegion": "Unsupported region",
-    "unsupportedCountry": "Unsupported country",
-    "errorTitle": "Oops!",
+    "errorTitle": "Error",
     "errorMessage": "An error occurred. Please try again later"
   },
   "forgotPassword": {
@@ -173,7 +172,7 @@
     "headerTitle": "Checkout",
     "orderSummaryTitle": "Order Summary",
     "totalTitle": "Total",
-    "shippingAddressTitle": "Shipping Address",
+    "deliveryAddressTitle": "Delivery Address",
     "paymentMethodTitle": "Payment Method",
     "commentLabel": "Comment",
     "commentPlaceholder": "Enter delivery details here",
@@ -195,7 +194,6 @@
     "errorDescription": "Failed to send email. Please try again at a later time"
   },
   "unsupportedRegion": {
-    "headerTitle": "Unsupported Region",
     "title": "Coming soon...",
     "description": "We're expanding! Subscribe to our newsletter to know when we reach your area!",
     "emailLabel": "Email",
@@ -208,34 +206,33 @@
     "errorMessage": "Something went wrong. Please try again"
   },
   "unsupportedCountry": {
-    "headerTitle": "Unsupported Country",
     "title": "Unsupported Country",
     "description": "Sorry, your country is not supported",
     "goBackButton": "Go back"
   },
   "orderFailed": {
     "title": "Something went wrong",
-    "description": "Please contact the admin for assistance",
+    "description": "Please contact support for assistance",
     "errorLabel": "Error",
     "returnHomeButton": "Return to home"
   },
   "orderSuccessful": {
     "headerTitle": "Order Confirmed",
     "receiptTitle": "Receipt",
-    "orderNumberLabel": "Order n°",
+    "orderNumberLabel": "Order n°{{orderNumber}}",
     "orderPlacedLabel": "Placed on",
     "orderCancelledLabel": "Cancelled on",
-    "cancellationReasonLabel": "Cancelled",
+    "cancellationReasonLabel": "Cancelled {{cancellationReason}}",
     "totalLabel": "Total",
     "totalAmountLabel": "Total",
-    "paymentMethodLabel": "Payment on delivery with",
+    "paymentMethodLabel": "Payment on delivery with {{paymentMethod}}",
     "noPaymentLabel": "No payment necessary",
-    "paidOnLabel": "Paid on",
+    "paidOnLabel": "Paid on {{date}}",
     "productColumn": "Product",
     "quantityColumn": "Qty",
     "totalColumn": "Total",
     "thankYouMessage": "Thank you for your order!",
-    "footerMessage": "© Fellah-eDar",
+    "footerMessage": "© Fellah-eDar, {{year}}",
     "viewOrdersButton": "View orders"
   },
   "orderItem": {
@@ -250,5 +247,41 @@
     "viewOrderButton": "View Order",
     "expandAccordionButton": "Expand",
     "collapseAccordionButton": "Collapse"
+  },
+  "onBoarding": {
+    "title1": "Welcome to Fellah-eDar!",
+    "description1": "Welcome to your personal companion app for fresh fruit and vegetable deliveries right to your doorstep!",
+    "subTitle1": "Please choose a language to get started",
+    "title2": "Customize your basket",
+    "description2": "Customize your basket with our seasonal variety of fruits and vegetables",
+    "detail2": "Fill your basket with exactly 15 kg to be able to place an order",
+    "title3": "Delivered fresh, straight to your doorstep",
+    "description3": "Your order will be packed and sent out for delivery the next day",
+    "detail3": "You can place one order per day and have 10 minutes to cancel, with cancellations closing at midnight",
+    "getStartedButton": "Get started",
+    "nextButton": "Next"
+  },
+  "tabs": {
+    "home": "Home",
+    "catalogue": "Catalogue",
+    "profile": "Profile",
+    "orders": "Orders",
+    "delivery": "Delivery",
+    "inventory": "Inventory"
+  },
+  "trackYourOrder": {
+    "title": "Track your order"
+  },
+  "verifyOtp": {
+    "title": "Verify account",
+    "enterCodePrompt": "Please enter the code sent to your email to complete your account setup",
+    "resendPrompt": "Did not receive the code? Resend",
+    "verifyButton": "Verify account",
+    "successTitle": "Success!",
+    "successMessage": "Your account was successfully verified",
+    "errorMessage": "You have entered an invalid code. Please try again",
+    "sendEmailMessage": "A new code has been sent to your email",
+    "errorTitle": "Oops!",
+    "sendErrorMessage": "Failed to send a new code. Please try again at a later time"
   }
 }
