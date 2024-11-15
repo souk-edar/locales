@@ -1,6 +1,7 @@
 {
   "home": {
     "welcomeMessage": "Bienvenue sur Fellah-eDar!",
+    "welcomeUserMessage": "Bienvenue {{name}}!",
     "nowTakingOrders": "Commandes ouvertes pour",
     "viewCatalogue": "Voir le catalogue",
     "yourOrderForDay": "Votre commande pour le {{day}}",
@@ -20,10 +21,10 @@
     "successTitle": "Succès!",
     "passwordResetSuccess": "Un lien de réinitialisation de mot de passe a été envoyé à votre email",
     "errorTitle": "Erreur",
-    "passwordResetError": "Échec de l'envoi de l'email de réinitialisation du mot de passe. Veuillez réessayer",
+    "passwordResetError": "Échec de l'envoi de l'email de réinitialisation du mot de passe. Veuillez réessayer"
   },
   "profile": {
-    "verifyEmailBanner": "Vérifiez votre email pour passer des commandes. Cliquez ici !",
+    "verifyEmailBanner": "Vérifiez votre email pour passer des commandes. Cliquez ici!",
     "title": "Profil",
     "signIn": "Se connecter",
     "myOrders": "Mes commandes",
@@ -70,8 +71,8 @@
     "delivery": "Livraison",
     "total": "Total",
     "proceedToCheckout": "Procéder au paiement",
-    "proceedToCheckoutError": "Erreur",
-    "proceedToCheckoutErrorDescription": "Votre panier doit contenir {{MAX_ORDER_QUANTITY}} kg avant de pouvoir continuer"
+    "proceedToCheckoutErrorTitle": "Erreur",
+    "proceedToCheckoutErrorDescription": "Votre panier doit contenir {{maxOrderQuantity}} kg avant de pouvoir continuer"
   },
   "signIn": {
     "title": "Se connecter",
@@ -89,7 +90,7 @@
   },
   "signUp": {
     "title": "S'inscrire",
-    "locationStepTitle": "Définissez votre adresse de domicile",
+    "locationStepTitle": "Définissez votre adresse",
     "addressStepTitle": "Confirmez l'adresse",
     "phoneNumberStepTitle": "Entrez le numéro de téléphone",
     "profileStepTitle": "Complétez votre profil",
@@ -153,8 +154,6 @@
     "apartmentMaxLength": "L'appartement doit comporter au maximum 6 caractères",
     "apartmentPattern": "L'appartement doit contenir uniquement des caractères alphanumériques",
     "agreementError": "Veuillez accepter la Politique de confidentialité et les Conditions d'utilisation pour continuer",
-    "unsupportedRegion": "Région non prise en charge",
-    "unsupportedCountry": "Pays non pris en charge",
     "errorTitle": "Oups!",
     "errorMessage": "Une erreur est survenue. Veuillez réessayer plus tard"
   },
@@ -173,7 +172,7 @@
     "headerTitle": "Passer la commande",
     "orderSummaryTitle": "Résumé de la commande",
     "totalTitle": "Total",
-    "shippingAddressTitle": "Adresse de livraison",
+    "deliveryAddressTitle": "Adresse de livraison",
     "paymentMethodTitle": "Méthode de paiement",
     "commentLabel": "Commentaire",
     "commentPlaceholder": "Entrez les détails de la livraison ici",
@@ -195,7 +194,6 @@
     "errorDescription": "Échec de l'envoi de l'email. Veuillez réessayer plus tard"
   },
   "unsupportedRegion": {
-    "headerTitle": "Région non prise en charge",
     "title": "Bientôt disponible...",
     "description": "Nous nous développons! Abonnez-vous à notre newsletter pour savoir quand nous arriverons dans votre région!",
     "emailLabel": "E-mail",
@@ -208,34 +206,33 @@
     "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer"
   },
   "unsupportedCountry": {
-    "headerTitle": "Pays non pris en charge",
     "title": "Pays non pris en charge",
     "description": "Désolé, votre pays n'est pas pris en charge",
     "goBackButton": "Retour"
   },
   "orderFailed": {
     "title": "Une erreur est survenue",
-    "description": "Veuillez contacter l'administrateur pour obtenir de l'aide",
+    "description": "Veuillez contacter le support pour obtenir de l'aide",
     "errorLabel": "Erreur",
     "returnHomeButton": "Retour à l'accueil"
   },
   "orderSuccessful": {
     "headerTitle": "Commande Confirmée",
     "receiptTitle": "Reçu",
-    "orderNumberLabel": "Commande n°",
+    "orderNumberLabel": "Commande n°{{orderNumber}}",
     "orderPlacedLabel": "Passée le",
     "orderCancelledLabel": "Annulée le",
-    "cancellationReasonLabel": "Annulée",
+    "cancellationReasonLabel": "Annulée {{cancellationReason}}",
     "totalLabel": "Total",
     "totalAmountLabel": "Montant total",
-    "paymentMethodLabel": "Paiement à la livraison avec",
+    "paymentMethodLabel": "Paiement à la livraison avec {{paymentMethod}}",
     "noPaymentLabel": "Aucun paiement nécessaire",
-    "paidOnLabel": "Payé le",
+    "paidOnLabel": "Payé le {{date}}",
     "productColumn": "Produit",
     "quantityColumn": "Qté",
     "totalColumn": "Total",
     "thankYouMessage": "Merci pour votre commande!",
-    "footerMessage": "© Fellah-eDar",
+    "footerMessage": "© Fellah-eDar, {{year}}",
     "viewOrdersButton": "Voir les commandes"
   },
   "orderItem": {
@@ -250,5 +247,41 @@
     "viewOrderButton": "Voir la commande",
     "expandAccordionButton": "Développer",
     "collapseAccordionButton": "Réduire"
+  },
+  "onBoarding": {
+    "title1": "Bienvenue à Fellah-eDar!",
+    "description1": "Bienvenue dans votre application personnelle pour la livraison de fruits et légumes frais directement à votre porte !",
+    "subTitle1": "Veuillez choisir une langue pour commencer",
+    "title2": "Personnalisez votre panier",
+    "description2": "Personnalisez votre panier avec notre variété de fruits et légumes de saison",
+    "detail2": "Remplissez votre panier avec exactement 15 kg pour pouvoir passer une commande",
+    "title3": "Livré frais, directement à votre porte",
+    "description3": "Votre commande sera emballée et expédiée pour livraison le lendemain",
+    "detail3": "Vous pouvez passer une commande par jour et avez 10 minutes pour annuler, les annulations se terminent à minuit",
+    "getStartedButton": "Commencer",
+    "nextButton": "Suivant"
+  },
+  "tabs": {
+    "home": "Accueil",
+    "catalogue": "Catalogue",
+    "profile": "Profil",
+    "orders": "Commandes",
+    "delivery": "Livraison",
+    "inventory": "Inventaire"
+  },
+  "trackYourOrder": {
+    "title": "Suivez votre commande"
+  },
+  "verifyOtp": {
+    "title": "Vérifier le compte",
+    "enterCodePrompt": "Veuillez entrer le code envoyé à votre email pour terminer la configuration de votre compte",
+    "resendPrompt": "Vous n'avez pas reçu le code ? Renvoyer",
+    "verifyButton": "Vérifier le compte",
+    "successTitle": "Succès!",
+    "successMessage": "Votre compte a été vérifié avec succès",
+    "errorMessage": "Vous avez entré un code invalide. Veuillez réessayer",
+    "sendEmailMessage": "Un nouveau code a été envoyé à votre email",
+    "errorTitle": "Oups!",
+    "sendErrorMessage": "Échec de l'envoi d'un nouveau code. Veuillez réessayer plus tard"
   }
 }
