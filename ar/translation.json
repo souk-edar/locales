@@ -1,9 +1,10 @@
 {
   "home": {
     "welcomeMessage": "مرحبًا بك في فلاح الدار!",
+    "welcomeUserMessage": "مرحبًا {{name}}!",
     "nowTakingOrders": "الطلبات مفتوحة ليوم",
     "viewCatalogue": "عرض الكتالوج",
-    "yourOrderForDay": "طلبك {{day}}",
+    "yourOrderForDay": "طلبك ليوم {{day}}",
     "giveCodeToDriver": "أعطِ هذا الرمز لسائق التوصيل لتستلم طلبك",
     "ordersRemaining": "{{remaining}} طلبات متبقية من أصل {{max}}"
   },
@@ -17,9 +18,9 @@
     "requestPassword": "طلب كلمة مرور جديدة",
     "deleteProfile": "حذف الملف الشخصي",
     "addressNotFound": "لم يتم العثور على العنوان",
-    "successMessage": "تم بنجاح!",
+    "successTitle": "تم بنجاح!",
     "passwordResetSuccess": "تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني",
-    "errorMessage": "خطأ",
+    "errorTitle": "خطأ",
     "passwordResetError": "فشل في إرسال رابط إعادة تعيين كلمة المرور. حاول مرة أخرى"
   },
   "profile": {
@@ -70,8 +71,8 @@
     "delivery": "التوصيل",
     "total": "الإجمالي",
     "proceedToCheckout": "المتابعة إلى الدفع",
-    "proceedToCheckoutError": "خطأ",
-    "proceedToCheckoutErrorDescription": "يجب أن تحتوي سلتك على {{MAX_ORDER_QUANTITY}} كجم قبل المتابعة."
+    "proceedToCheckoutErrorTitle": "خطأ",
+    "proceedToCheckoutErrorDescription": "يجب أن تحتوي سلتك على {{maxOrderQuantity}} كجم قبل المتابعة"
   },
   "signIn": {
     "title": "تسجيل الدخول",
@@ -153,8 +154,6 @@
     "apartmentMaxLength": "يجب أن يكون رقم الشقة 6 أحرف على الأكثر",
     "apartmentPattern": "يجب أن يحتوي رقم الشقة على أحرف وأرقام فقط",
     "agreementError": "يرجى الموافقة على سياسة الخصوصية وشروط الخدمة للمتابعة",
-    "unsupportedRegion": "منطقة غير مدعومة",
-    "unsupportedCountry": "بلد غير مدعوم",
     "errorTitle": "عذرًا!",
     "errorMessage": "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا"
   },
@@ -173,7 +172,7 @@
     "headerTitle": "إتمام الطلب",
     "orderSummaryTitle": "ملخص الطلب",
     "totalTitle": "الإجمالي",
-    "shippingAddressTitle": "عنوان الشحن",
+    "deliveryAddressTitle": "عنوان التوصيل",
     "paymentMethodTitle": "طريقة الدفع",
     "commentLabel": "تعليق",
     "commentPlaceholder": "أدخل تفاصيل التوصيل هنا",
@@ -195,7 +194,6 @@
     "errorDescription": "فشل في إرسال البريد الإلكتروني. يرجى المحاولة مرة أخرى لاحقاً"
   },
   "unsupportedRegion": {
-    "headerTitle": "المنطقة غير مدعومة",
     "title": "قريبًا...",
     "description": "نحن نتوسع! اشترك في النشرة الإخبارية لتعرف متى نصل إلى منطقتك!",
     "emailLabel": "البريد الإلكتروني",
@@ -208,34 +206,33 @@
     "errorMessage": "حدث خطأ ما. يرجى المحاولة مرة أخرى"
   },
   "unsupportedCountry": {
-    "headerTitle": "البلد غير مدعوم",
     "title": "البلد غير مدعوم",
     "description": "عذرًا، بلدك غير مدعوم",
     "goBackButton": "العودة"
   },
   "orderFailed": {
     "title": "حدث خطأ ما",
-    "description": "يرجى الاتصال بالمسؤول للمساعدة",
+    "description": "يرجى الاتصال بالدعم للحصول على المساعدة",
     "errorLabel": "خطأ",
     "returnHomeButton": "العودة إلى الصفحة الرئيسية"
   },
-  "orderSuccessfulAr": {
+  "orderSuccessful": {
     "headerTitle": "تأكيد الطلب",
     "receiptTitle": "الإيصال",
-    "orderNumberLabel": "رقم الطلب",
+    "orderNumberLabel": "رقم الطلب {{orderNumber}}",
     "orderPlacedLabel": "تم الطلب في",
     "orderCancelledLabel": "تم الإلغاء في",
-    "cancellationReasonLabel": "ملغاة",
+    "cancellationReasonLabel": "ملغاة {{cancellationReason}}",
     "totalLabel": "الإجمالي",
     "totalAmountLabel": "المجموع",
-    "paymentMethodLabel": "الدفع عند التسليم باستخدام",
+    "paymentMethodLabel": "{{paymentMethod}} الدفع عند التسليم بواسطة",
     "noPaymentLabel": "لا داعي للدفع",
-    "paidOnLabel": "تم الدفع في",
+    "paidOnLabel": "{{date}} تم الدفع في",
     "productColumn": "المنتج",
     "quantityColumn": "الكمية",
     "totalColumn": "الإجمالي",
     "thankYouMessage": "شكرًا لطلبك!",
-    "footerMessage": "© فلاح الدار",
+    "footerMessage": "© فلاح الدار {{year}}",
     "viewOrdersButton": "عرض الطلبات"
   },
   "orderItem": {
@@ -250,5 +247,41 @@
     "viewOrderButton": "عرض الطلب",
     "expandAccordionButton": "توسيع",
     "collapseAccordionButton": "طي"
+  },
+  "onBoarding": {
+    "title1": "مرحبًا بك في فلاح الدار!",
+    "description1": "مرحبًا بك في تطبيقك الشخصي لتوصيل الفواكه والخضروات الطازجة إلى باب منزلك!",
+    "subTitle1": "يرجى اختيار اللغة للبدء",
+    "title2": "خصص سلتك",
+    "description2": "خصص سلتك مع مجموعة متنوعة من الفواكه والخضروات الموسمية",
+    "detail2": "املأ السلة بوزن 15 كغ تمامًا لتتمكن من تقديم طلبك",
+    "title3": "توصيل طازج، مباشرة إلى باب منزلك",
+    "description3": "سيتم تعبئة طلبك وإرساله للتوصيل في اليوم التالي",
+    "detail3": "يمكنك تقديم طلب واحد يوميًا ولديك 10 دقائق لإلغاء الطلب، مع انتهاء فترة الإلغاء عند منتصف الليل",
+    "getStartedButton": "ابدأ",
+    "nextButton": "التالي"
+  },
+  "tabs": {
+    "home": "الرئيسية",
+    "catalogue": "الكتالوج",
+    "profile": "الملف الشخصي",
+    "orders": "الطلبات",
+    "delivery": "التوصيل",
+    "inventory": "المخزون"
+  },
+  "trackYourOrder": {
+    "title": "تتبع طلبك"
+  },
+  "verifyOtp": {
+    "title": "تحقق من الحساب",
+    "enterCodePrompt": "يرجى إدخال الرمز المرسل إلى بريدك الإلكتروني لإكمال إعداد حسابك",
+    "resendPrompt": "لم تتلق الرمز؟ أعد الإرسال",
+    "verifyButton": "تحقق من الحساب",
+    "successTitle": "تم بنجاح!",
+    "successMessage": "تم التحقق من حسابك بنجاح",
+    "errorMessage": "لقد أدخلت رمزًا غير صالح. يرجى المحاولة مرة أخرى",
+    "sendEmailMessage": "تم إرسال رمز جديد إلى بريدك الإلكتروني",
+    "errorTitle": "عذرًا!",
+    "sendErrorMessage": "فشل في إرسال رمز جديد. يرجى المحاولة مرة أخرى لاحقًا"
   }
 }
