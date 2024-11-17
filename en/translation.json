@@ -1,12 +1,15 @@
 {
   "home": {
-    "welcomeMessage": "Welcome to Fellah-eDar!",
-    "welcomeUserMessage": "Welcome {{name}}!",
-    "nowTakingOrders": "Now taking orders for",
+    "welcomeUserMessage": "Welcome, {{name}}!",
+    "welcomeMessage": "Welcome!",
+    "thankYouText": "We’ve received your order for today. Thank you!",
+    "hurryUpText": "Hurry up and place your order!",
+    "nowAcceptingText": "Now accepting orders for {{date}}",
+    "remainingSpacesText": "{{spaces}} spaces left",
     "viewCatalogue": "View Catalogue",
-    "yourOrderForDay": "Your {{day}}'s order",
-    "giveCodeToDriver": "Give this code to the delivery driver to receive your order",
-    "ordersRemaining": "{{remaining}} orders remaining out of {{max}}"
+    "giveCode": "Give this code to the delivery driver to receive your order",
+    "yourOrderFor": "Your {{day}}'s order",
+    "capacityLimitReached": "Sorry, we’re at capacity and can’t take new orders right now"
   },
   "catalogue": {
     "categories": "Categories",
@@ -37,6 +40,18 @@
     "title": "My orders",
     "noOrdersMessage": "You haven't placed any orders",
     "noOrdersDescription": "Once you place an order, you'll be able to see it here"
+  },
+  "orderHistoryItem": {
+    "trackOrder": "Track order",
+    "viewReceipt": "View receipt",
+    "cancelOrder": "Cancel order",
+    "orderCanceledSuccess": "Order canceled successfully",
+    "orderNumber": "Order n°",
+    "orderPlaced": "Order placed",
+    "status": "Status",
+    "cancelledOn": "Cancelled on",
+    "deliveredOn": "Delivered on",
+    "expectedDelivery": "Expected delivery"
   },
   "customerSupport": {
     "title": "Email support",
@@ -236,17 +251,7 @@
     "viewOrdersButton": "View orders"
   },
   "orderItem": {
-    "accordionHeaderLabel": "Order Summary",
-    "cancelledOrderTitle": "Order Cancelled",
-    "orderDetailsTitle": "Order Details",
-    "orderStatusLabel": "Status",
-    "orderPlacedLabel": "Placed on",
-    "orderTotalLabel": "Total",
-    "noOrdersMessage": "No orders available",
-    "orderCancelledMessage": "This order was cancelled",
-    "viewOrderButton": "View Order",
-    "expandAccordionButton": "Expand",
-    "collapseAccordionButton": "Collapse"
+    "swipeToDelete": "Swipe to delete"
   },
   "onBoarding": {
     "title1": "Welcome to Fellah-eDar!",
@@ -270,7 +275,12 @@
     "inventory": "Inventory"
   },
   "trackYourOrder": {
-    "title": "Track your order"
+    "title": "Track your order",
+    "orderNumber": "Order n°",
+    "confirmed": "Confirmed",
+    "packed": "Packed",
+    "outForDelivery": "Out for delivery",
+    "delivered": "Delivered"
   },
   "verifyOtp": {
     "title": "Verify account",
@@ -280,8 +290,70 @@
     "successTitle": "Success!",
     "successMessage": "Your account was successfully verified",
     "errorMessage": "You have entered an invalid code. Please try again",
+    "sendEmailMessageTitle": "Email sent!",
     "sendEmailMessage": "A new code has been sent to your email",
     "errorTitle": "Oops!",
     "sendErrorMessage": "Failed to send a new code. Please try again at a later time"
+  },
+  "inventory": {
+    "title": "Inventory",
+    "asOfDate": "As of {{date}}",
+    "errorMessage": "Error loading inventory",
+    "refreshing": "Refreshing...",
+    "totalAvailableStock": "Total available stock:",
+    "totalPurchasedStock": "Total purchased stock:",
+    "remainingStock": "Remaining stock:"
+  },
+  "adminOrderDetails": {
+    "title": "Order n°{{orderId}}",
+    "orderDetails": "Order details",
+    "placedOn": "Placed on:",
+    "customerDetails": "Customer details",
+    "telephone": "TEL:",
+    "viewReceipt": "View receipt",
+    "cancelOrder": "Cancel order",
+    "deliveryAddress": "Delivery address",
+    "name": "Name",
+    "quantity": "Qty",
+    "uom": "UOM",
+    "itemsToPack": "Items to pack",
+    "checkAll": "Check all",
+    "packingContainerId": "Packing container ID",
+    "container": "Container {{containerId}}",
+    "packingComplete": "Packing complete",
+    "packingError": "Packing error",
+    "donePacking": "Done packing",
+    "confirmDelivery": "Confirm delivery",
+    "orderTotal": "Order total: {{totalPrice}} {{currencyCode}}",
+    "enterDeliveryCode": "Enter the 4-digit code to complete the delivery",
+    "completeDelivery": "Complete delivery",
+    "deliveryCompleted": "Delivery completed successfully",
+    "deliveryError": "Delivery completion error",
+    "packingNotReady": "Order not ready for packing",
+    "orderShipped": "Order has shipped",
+    "orderDelivered": "Order delivered",
+    "orderCancelled": "Order cancelled",
+    "routeSequence": "Route sequence #{{routeOrderSequence}}",
+    "containerPacking": "Packing container ID",
+    "itemsToPackTitle": "Items to pack",
+    "on": "on {{date}}",
+    "status": "Status: {{status}}"
+  },
+  "adminOrderItem": {
+    "currentDelivery": "Current Delivery",
+    "order": "Order",
+    "orderNumber": "Order n°",
+    "status": "Status",
+    "customerName": "Customer name",
+    "customerEmail": "Customer email",
+    "viewDetails": "View details"
+  },
+  "exceptions": {
+    "dailyCancellationLimitReached": "Sorry, you have reached the daily cancellation limit of three. Please try again tomorrow to place a new order",
+    "oneOrderPerDay": "Only one order per day is permitted. Be sure to come back tomorrow to secure your basket early!",
+    "cancelOrderTimeout": "Unable to cancel order. Contact support if you wish to cancel",
+    "forgotPasswordRequestCooldown": "Please wait before requesting a new code",
+    "capacityLimitReached": "Sorry, we’ve reached our capacity for today and are unable to take new orders. Please try placing your order again tomorrow",
+    "cancelOrderMidnight": "Order cannot be cancelled after midnight"
   }
 }
