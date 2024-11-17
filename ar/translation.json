@@ -1,12 +1,15 @@
 {
   "home": {
-    "welcomeMessage": "مرحبًا بك في فلاح الدار!",
-    "welcomeUserMessage": "مرحبًا {{name}}!",
-    "nowTakingOrders": "الطلبات مفتوحة ليوم",
+    "welcomeUserMessage": "مرحبًا، {{name}}!",
+    "welcomeMessage": "مرحبًا!",
+    "thankYouText": "لقد استلمنا طلبك لليوم. شكرًا لك!",
+    "hurryUpText": "سارع في تقديم طلبك!",
+    "nowAcceptingText": "نستقبل الطلبات ليوم {{date}}",
+    "remainingSpacesText": "تبقى {{spaces}} مكانًا",
     "viewCatalogue": "عرض الكتالوج",
-    "yourOrderForDay": "طلبك ليوم {{day}}",
-    "giveCodeToDriver": "أعطِ هذا الرمز لسائق التوصيل لتستلم طلبك",
-    "ordersRemaining": "{{remaining}} طلبات متبقية من أصل {{max}}"
+    "giveCode": "أعط هذا الرمز لسائق التوصيل لاستلام طلبك",
+    "yourOrderFor": "طلبك ليوم {{day}}",
+    "capacityLimitReached": "عذرًا، لقد وصلنا إلى الحد الأقصى ولا يمكننا قبول طلبات جديدة الآن"
   },
   "catalogue": {
     "categories": "الفئات",
@@ -37,6 +40,18 @@
     "title": "طلباتي",
     "noOrdersMessage": "لم تقم بوضع أي طلبات",
     "noOrdersDescription": "بمجرد تقديم طلب، ستتمكن من رؤيته هنا"
+  },
+  "orderHistoryItem": {
+    "trackOrder": "تتبع الطلب",
+    "viewReceipt": "عرض الإيصال",
+    "cancelOrder": "إلغاء الطلب",
+    "orderCanceledSuccess": "تم إلغاء الطلب بنجاح",
+    "orderNumber": "رقم الطلب",
+    "orderPlaced": "تم الطلب",
+    "status": "الحالة",
+    "cancelledOn": "ألغيت في",
+    "deliveredOn": "تم التسليم في",
+    "expectedDelivery": "التسليم المتوقع"
   },
   "customerSupport": {
     "title": "دعم عبر البريد الإلكتروني",
@@ -236,17 +251,7 @@
     "viewOrdersButton": "عرض الطلبات"
   },
   "orderItem": {
-    "accordionHeaderLabel": "ملخص الطلب",
-    "cancelledOrderTitle": "الطلب ملغى",
-    "orderDetailsTitle": "تفاصيل الطلب",
-    "orderStatusLabel": "الحالة",
-    "orderPlacedLabel": "تم الطلب في",
-    "orderTotalLabel": "الإجمالي",
-    "noOrdersMessage": "لا توجد طلبات",
-    "orderCancelledMessage": "تم إلغاء هذا الطلب",
-    "viewOrderButton": "عرض الطلب",
-    "expandAccordionButton": "توسيع",
-    "collapseAccordionButton": "طي"
+    "swipeToDelete": "مرر للحذف"
   },
   "onBoarding": {
     "title1": "مرحبًا بك في فلاح الدار!",
@@ -270,18 +275,85 @@
     "inventory": "المخزون"
   },
   "trackYourOrder": {
-    "title": "تتبع طلبك"
+    "title": "تتبع طلبك",
+    "orderNumber": "رقم الطلب",
+    "confirmed": "تم التأكيد",
+    "packed": "تم التعبئة",
+    "outForDelivery": "في الطريق للتسليم",
+    "delivered": "تم التسليم"
   },
   "verifyOtp": {
     "title": "تحقق من الحساب",
     "enterCodePrompt": "يرجى إدخال الرمز المرسل إلى بريدك الإلكتروني لإكمال إعداد حسابك",
     "resendPrompt": "لم تتلق الرمز؟ أعد الإرسال",
     "verifyButton": "تحقق من الحساب",
-    "successTitle": "تم بنجاح!",
+    "successTitle": "نجاح!",
     "successMessage": "تم التحقق من حسابك بنجاح",
     "errorMessage": "لقد أدخلت رمزًا غير صالح. يرجى المحاولة مرة أخرى",
+    "sendEmailMessageTitle": "تم إرسال البريد الإلكتروني!",
     "sendEmailMessage": "تم إرسال رمز جديد إلى بريدك الإلكتروني",
     "errorTitle": "عذرًا!",
     "sendErrorMessage": "فشل في إرسال رمز جديد. يرجى المحاولة مرة أخرى لاحقًا"
+  },
+  "inventory": {
+    "title": "المخزون",
+    "asOfDate": "اعتبارًا من {{date}}",
+    "errorMessage": "خطأ في تحميل المخزون",
+    "refreshing": "تحديث...",
+    "totalAvailableStock": "إجمالي المخزون المتاح:",
+    "totalPurchasedStock": "إجمالي المخزون المشتراة:",
+    "remainingStock": "المخزون المتبقي:"
+  },
+  "adminOrderDetails": {
+    "title": "الطلب رقم {{orderId}}",
+    "orderDetails": "تفاصيل الطلب",
+    "placedOn": "تاريخ الطلب:",
+    "customerDetails": "تفاصيل العميل",
+    "telephone": "هاتف:",
+    "viewReceipt": "عرض الإيصال",
+    "cancelOrder": "إلغاء الطلب",
+    "deliveryAddress": "عنوان التسليم",
+    "name": "الاسم",
+    "quantity": "الكمية",
+    "uom": "وحدة القياس",
+    "itemsToPack": "العناصر المراد تعبئتها",
+    "checkAll": "تحديد الكل",
+    "packingContainerId": "معرف حاوية التعبئة",
+    "container": "حاوية {{containerId}}",
+    "packingComplete": "اكتمل التعبئة",
+    "packingError": "خطأ في التعبئة",
+    "donePacking": "اكتمل التعبئة",
+    "confirmDelivery": "تأكيد التسليم",
+    "orderTotal": "إجمالي الطلب: {{totalPrice}} {{currencyCode}}",
+    "enterDeliveryCode": "أدخل الرمز المكون من 4 أرقام لإكمال التسليم",
+    "completeDelivery": "إكمال التسليم",
+    "deliveryCompleted": "تم إكمال التسليم بنجاح",
+    "deliveryError": "خطأ في إكمال التسليم",
+    "packingNotReady": "الطلب غير جاهز للتعبئة",
+    "orderShipped": "تم شحن الطلب",
+    "orderDelivered": "تم تسليم الطلب",
+    "orderCancelled": "تم إلغاء الطلب",
+    "routeSequence": "تسلسل الطريق رقم {{routeOrderSequence}}",
+    "containerPacking": "معرف حاوية التعبئة",
+    "itemsToPackTitle": "العناصر المراد تعبئتها",
+    "on": "في {{date}}",
+    "status": "الحالة: {{status}}"
+  },
+  "adminOrderItem": {
+    "currentDelivery": "التسليم الحالي",
+    "order": "طلب",
+    "orderNumber": "رقم الطلب",
+    "status": "الحالة",
+    "customerName": "اسم العميل",
+    "customerEmail": "بريد العميل الإلكتروني",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "exceptions": {
+    "dailyCancellationLimitReached": "عذرًا، لقد وصلت إلى الحد اليومي للإلغاءات وهو ثلاث مرات. يرجى المحاولة مرة أخرى غدًا لتقديم طلب جديد",
+    "oneOrderPerDay": "يُسمح بطلب واحد فقط يوميًا. تأكد من العودة غدًا لتأمين سلتك مبكرًا!",
+    "cancelOrderTimeout": "لا يمكن إلغاء الطلب. يرجى التواصل مع الدعم إذا كنت ترغب في الإلغاء",
+    "forgotPasswordRequestCooldown": "يرجى الانتظار قبل طلب رمز جديد",
+    "capacityLimitReached": "عذرًا، لقد وصلنا إلى الحد الأقصى للطلبات اليوم ولا يمكننا قبول طلبات جديدة. يرجى المحاولة مرة أخرى غدًا",
+    "cancelOrderMidnight": "لا يمكن إلغاء الطلب بعد منتصف الليل"
   }
 }
