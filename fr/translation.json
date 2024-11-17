@@ -1,12 +1,15 @@
 {
   "home": {
-    "welcomeMessage": "Bienvenue sur Fellah-eDar!",
-    "welcomeUserMessage": "Bienvenue {{name}}!",
-    "nowTakingOrders": "Commandes ouvertes pour",
+    "welcomeUserMessage": "Bienvenue, {{name}}!",
+    "welcomeMessage": "Bienvenue!",
+    "thankYouText": "Nous avons reçu votre commande pour aujourd'hui. Merci!",
+    "hurryUpText": "Dépêchez-vous de passer votre commande !",
+    "nowAcceptingText": "Nous acceptons maintenant les commandes pour le {{date}}",
+    "remainingSpacesText": "Il reste {{spaces}} places",
     "viewCatalogue": "Voir le catalogue",
-    "yourOrderForDay": "Votre commande pour le {{day}}",
-    "giveCodeToDriver": "Donnez ce code au livreur pour recevoir votre commande",
-    "ordersRemaining": "{{remaining}} commandes restantes sur {{max}}"
+    "giveCode": "Donnez ce code au livreur pour recevoir votre commande",
+    "yourOrderFor": "Votre commande du {{day}}",
+    "capacityLimitReached": "Désolé, nous avons atteint notre capacité et ne pouvons pas accepter de nouvelles commandes pour le moment"
   },
   "catalogue": {
     "categories": "Catégories",
@@ -37,6 +40,18 @@
     "title": "Mes commandes",
     "noOrdersMessage": "Vous n'avez passé aucune commande",
     "noOrdersDescription": "Une fois que vous aurez passé une commande, vous pourrez la voir ici"
+  },
+  "orderHistoryItem": {
+    "trackOrder": "Suivre la commande",
+    "viewReceipt": "Voir le reçu",
+    "cancelOrder": "Annuler la commande",
+    "orderCanceledSuccess": "Commande annulée avec succès",
+    "orderNumber": "Commande n°",
+    "orderPlaced": "Date de commande",
+    "status": "Statut",
+    "cancelledOn": "Annulée le",
+    "deliveredOn": "Livrée le",
+    "expectedDelivery": "Livraison prévue"
   },
   "customerSupport": {
     "title": "Support par email",
@@ -178,7 +193,7 @@
     "commentPlaceholder": "Entrez les détails de la livraison ici",
     "paymentMethodValue": "Paiement à la livraison",
     "placeOrderButton": "Passer la commande",
-    "successTitle": "Commande passée avec succès !",
+    "successTitle": "Commande passée avec succès!",
     "errorTitle": "Échec de la commande",
     "orderSummaryNoItems": "Aucun article dans votre panier"
   },
@@ -236,17 +251,7 @@
     "viewOrdersButton": "Voir les commandes"
   },
   "orderItem": {
-    "accordionHeaderLabel": "Résumé de la commande",
-    "cancelledOrderTitle": "Commande annulée",
-    "orderDetailsTitle": "Détails de la commande",
-    "orderStatusLabel": "Statut",
-    "orderPlacedLabel": "Passée le",
-    "orderTotalLabel": "Total",
-    "noOrdersMessage": "Aucune commande disponible",
-    "orderCancelledMessage": "Cette commande a été annulée",
-    "viewOrderButton": "Voir la commande",
-    "expandAccordionButton": "Développer",
-    "collapseAccordionButton": "Réduire"
+    "swipeToDelete": "Glisser pour supprimer"
   },
   "onBoarding": {
     "title1": "Bienvenue à Fellah-eDar!",
@@ -270,7 +275,12 @@
     "inventory": "Inventaire"
   },
   "trackYourOrder": {
-    "title": "Suivez votre commande"
+    "title": "Suivez votre commande",
+    "orderNumber": "Commande n°",
+    "confirmed": "Confirmée",
+    "packed": "Emballée",
+    "outForDelivery": "En cours de livraison",
+    "delivered": "Livrée"
   },
   "verifyOtp": {
     "title": "Vérifier le compte",
@@ -280,8 +290,70 @@
     "successTitle": "Succès!",
     "successMessage": "Votre compte a été vérifié avec succès",
     "errorMessage": "Vous avez entré un code invalide. Veuillez réessayer",
+    "sendEmailMessageTitle": "E-mail envoyé!",
     "sendEmailMessage": "Un nouveau code a été envoyé à votre email",
     "errorTitle": "Oups!",
     "sendErrorMessage": "Échec de l'envoi d'un nouveau code. Veuillez réessayer plus tard"
+  },
+  "inventory": {
+    "title": "Inventaire",
+    "asOfDate": "À partir de {{date}}",
+    "errorMessage": "Erreur de chargement de l'inventaire",
+    "refreshing": "Actualisation...",
+    "totalAvailableStock": "Stock total disponible :",
+    "totalPurchasedStock": "Stock total acheté :",
+    "remainingStock": "Stock restant :"
+  },
+  "adminOrderDetails": {
+    "title": "Commande n°{{orderId}}",
+    "orderDetails": "Détails de la commande",
+    "placedOn": "Passée le :",
+    "customerDetails": "Détails du client",
+    "telephone": "TEL:",
+    "viewReceipt": "Voir le reçu",
+    "cancelOrder": "Annuler la commande",
+    "deliveryAddress": "Adresse de livraison",
+    "name": "Nom",
+    "quantity": "Qté",
+    "uom": "UOM",
+    "itemsToPack": "Articles à emballer",
+    "checkAll": "Tout sélectionner",
+    "packingContainerId": "ID du conteneur d'emballage",
+    "container": "Conteneur {{containerId}}",
+    "packingComplete": "Emballage terminé",
+    "packingError": "Erreur d'emballage",
+    "donePacking": "Terminé l'emballage",
+    "confirmDelivery": "Confirmer la livraison",
+    "orderTotal": "Total de la commande : {{totalPrice}} {{currencyCode}}",
+    "enterDeliveryCode": "Entrez le code à 4 chiffres pour finaliser la livraison",
+    "completeDelivery": "Livraison complète",
+    "deliveryCompleted": "Livraison complétée avec succès",
+    "deliveryError": "Erreur de finalisation de livraison",
+    "packingNotReady": "Commande non prête pour l'emballage",
+    "orderShipped": "Commande expédiée",
+    "orderDelivered": "Commande livrée",
+    "orderCancelled": "Commande annulée",
+    "routeSequence": "Séquence de route n°{{routeOrderSequence}}",
+    "containerPacking": "ID du conteneur d'emballage",
+    "itemsToPackTitle": "Articles à emballer",
+    "on": "le {{date}}",
+    "status": "Statut : {{status}}"
+  },
+  "adminOrderItem": {
+    "currentDelivery": "Livraison en cours",
+    "order": "Commande",
+    "orderNumber": "Commande n°",
+    "status": "Statut",
+    "customerName": "Nom du client",
+    "customerEmail": "Email du client",
+    "viewDetails": "Voir les détails"
+  },
+  "exceptions": {
+    "dailyCancellationLimitReached": "Désolé, vous avez atteint la limite quotidienne de trois annulations. Veuillez réessayer demain pour passer une nouvelle commande",
+    "oneOrderPerDay": "Une seule commande par jour est autorisée. Revenez demain pour sécuriser votre panier tôt!",
+    "cancelOrderTimeout": "Impossible d'annuler la commande. Contactez le support si vous souhaitez annuler",
+    "forgotPasswordRequestCooldown": "Veuillez patienter avant de demander un nouveau code",
+    "capacityLimitReached": "Désolé, nous avons atteint notre capacité pour aujourd'hui et ne pouvons pas accepter de nouvelles commandes. Veuillez réessayer de passer votre commande demain",
+    "cancelOrderMidnight": "La commande ne peut pas être annulée après minuit"
   }
 }
