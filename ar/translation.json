@@ -18,20 +18,20 @@
   },
   "editProfile": {
     "title": "تعديل الملف الشخصي",
-    "requestPassword": "طلب كلمة مرور جديدة",
+    "requestPassword": "طلب كلمة سر جديدة",
     "deleteProfile": "حذف الملف الشخصي",
     "addressNotFound": "لم يتم العثور على العنوان",
     "successTitle": "تم بنجاح!",
-    "passwordResetSuccess": "تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني",
+    "passwordResetSuccess": "تم إرسال رابط إعادة تعيين كلمة السر إلى بريدك الإلكتروني",
     "errorTitle": "خطأ",
-    "passwordResetError": "فشل في إرسال رابط إعادة تعيين كلمة المرور. حاول مرة أخرى"
+    "passwordResetError": "فشل في إرسال رابط إعادة تعيين كلمة السر. حاول مرة أخرى"
   },
   "profile": {
     "verifyEmailBanner": "تحقق من بريدك الإلكتروني لتتمكن من تقديم الطلبات. انقر هنا!",
     "title": "الملف الشخصي",
     "signIn": "تسجيل الدخول",
     "myOrders": "طلباتي",
-    "customerSupport": "دعم العملاء",
+    "customerSupport": "دعم الزبائن",
     "faqs": "الأسئلة الشائعة",
     "helpUsImprove": "إقتراحات؟",
     "signOut": "تسجيل الخروج"
