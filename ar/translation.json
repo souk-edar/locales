@@ -210,13 +210,13 @@
   },
   "unsupportedRegion": {
     "title": "قريبًا...",
-    "description": "نحن نتوسع! اشترك في النشرة الإخبارية لتعرف متى نصل إلى منطقتك!",
+    "description": "نحن نتوسع! اشترك في الرسالة الإخبارية لتعرف متى نصل إلى منطقتك!",
     "emailLabel": "البريد الإلكتروني",
     "emailPlaceholder": "customer@mail.com",
     "subscribeButton": "اشترك",
     "goBackButton": "العودة",
     "successTitle": "نجاح!",
-    "successMessage": "تمت إضافتك بنجاح إلى النشرة الإخبارية!",
+    "successMessage": "تمت إضافتك بنجاح إلى الرسالة الإخبارية!",
     "errorTitle": "عذرًا!",
     "errorMessage": "حدث خطأ ما. يرجى المحاولة مرة أخرى"
   },
