@@ -301,14 +301,14 @@
     "errorMessage": "خطأ في تحميل المخزون",
     "refreshing": "تحديث...",
     "totalAvailableStock": "إجمالي المخزون المتاح:",
-    "totalPurchasedStock": "إجمالي المخزون المشتراة:",
+    "totalPurchasedStock": "إجمالي المخزون المشترى:",
     "remainingStock": "المخزون المتبقي:"
   },
   "adminOrderDetails": {
     "title": "الطلب رقم {{orderId}}",
     "orderDetails": "تفاصيل الطلب",
     "placedOn": "تاريخ الطلب:",
-    "customerDetails": "تفاصيل العميل",
+    "customerDetails": "تفاصيل الزبون",
     "telephone": "هاتف:",
     "viewReceipt": "عرض الإيصال",
     "cancelOrder": "إلغاء الطلب",
@@ -344,8 +344,8 @@
     "order": "طلب",
     "orderNumber": "رقم الطلب",
     "status": "الحالة",
-    "customerName": "اسم العميل",
-    "customerEmail": "بريد العميل الإلكتروني",
+    "customerName": "اسم الزبون",
+    "customerEmail": "بريد الزبون الإلكتروني",
     "viewDetails": "عرض التفاصيل"
   },
   "exceptions": {
