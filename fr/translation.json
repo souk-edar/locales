@@ -70,7 +70,7 @@
     "question1": "Quelle est l'heure limite pour la livraison le lendemain ?",
     "answer1": "L'heure limite pour la livraison le lendemain est à minuit. Les commandes passées avant seront livrées le lendemain entre 12h et 20h.",
     "question2": "Quel est le poids requis pour le panier lors du paiement ?",
-    "answer2": "Le panier doit peser exactement 15 kg pour finaliser la commande. C'est à la fois le poids minimum et maximum autorisé.",
+    "answer2": "Le panier doit peser entre 6 kg et 15 kg pour passer à l'achat. C'est la plage de poids autorisée.",
     "question3": "Comment contacter le support client ?",
     "answer3": "Vous pouvez contacter le support client via la page 'Profil'. Utilisez le formulaire dans la page 'Support client' pour envoyer un message à l'équipe de support.",
     "question4": "Comment puis-je mettre à jour mon adresse de livraison ?",
@@ -80,7 +80,7 @@
   },
   "order": {
     "title": "Panier",
-    "emptyMessage": "Votre panier est vide !",
+    "emptyMessage": "Votre panier est vide!",
     "emptyDescription": "Ajoutez des fruits et légumes frais à votre panier pour commencer",
     "subtotal": "Sous-total",
     "delivery": "Livraison",
@@ -90,7 +90,7 @@
     "proceedToCheckoutErrorDescription": "Votre panier doit contenir {{maxOrderQuantity}} kg avant de pouvoir continuer"
   },
   "signIn": {
-    "title": "Se connecter",
+    "title": "Connexion",
     "emailLabel": "Email",
     "emailPlaceholder": "client@mail.com",
     "passwordLabel": "Mot de passe",
@@ -222,7 +222,7 @@
   },
   "unsupportedCountry": {
     "title": "Pays non pris en charge",
-    "description": "Désolé, votre pays n'est pas pris en charge",
+    "description": "Désolé, notre service n'est pas encore disponible dans votre pays",
     "goBackButton": "Retour"
   },
   "orderFailed": {
@@ -255,11 +255,11 @@
   },
   "onBoarding": {
     "title1": "Bienvenue à Fellah-eDar!",
-    "description1": "Bienvenue dans votre application personnelle pour la livraison de fruits et légumes frais directement à votre porte !",
+    "description1": "Bienvenue dans votre application personnelle pour la livraison de fruits et légumes frais directement à votre porte!",
     "subTitle1": "Veuillez choisir une langue pour commencer",
     "title2": "Personnalisez votre panier",
     "description2": "Personnalisez votre panier avec notre variété de fruits et légumes de saison",
-    "detail2": "Remplissez votre panier avec exactement 15 kg pour pouvoir passer une commande",
+    "detail2": "Remplissez votre panier avec un minimum de 6 kg et maximum de 15 kg pour pouvoir passer une commande",
     "title3": "Livré frais, directement à votre porte",
     "description3": "Votre commande sera emballée et expédiée pour livraison le lendemain",
     "detail3": "Vous pouvez passer une commande par jour et avez 10 minutes pour annuler, les annulations se terminent à minuit",
@@ -349,11 +349,23 @@
     "viewDetails": "Voir les détails"
   },
   "exceptions": {
-    "dailyCancellationLimitReached": "Désolé, vous avez atteint la limite quotidienne de trois annulations. Veuillez réessayer demain pour passer une nouvelle commande",
+    "dailyCancellationLimitReached": "Désolé, vous avez atteint la limite quotidienne de trois annulations de commande. Veuillez réessayer demain pour passer une nouvelle commande",
     "oneOrderPerDay": "Une seule commande par jour est autorisée. Revenez demain pour sécuriser votre panier tôt!",
     "cancelOrderTimeout": "Impossible d'annuler la commande. Contactez le support si vous souhaitez annuler",
     "forgotPasswordRequestCooldown": "Veuillez patienter avant de demander un nouveau code",
     "capacityLimitReached": "Désolé, nous avons atteint notre capacité pour aujourd'hui et ne pouvons pas accepter de nouvelles commandes. Veuillez réessayer de passer votre commande demain",
-    "cancelOrderMidnight": "La commande ne peut pas être annulée après minuit"
+    "cancelOrderMidnight": "La commande ne peut pas être annulée après minuit",
+    "dailyCancellationLimitReachedTitle": "Limite quotidienne d'annulation atteinte",
+    "oneOrderPerDayTitle": "Limite d'une commande par jour",
+    "capacityLimitReachedTitle": "Limite de capacité atteinte"
+  },
+  "changeLanguageModal": {
+    "title": "Choisir la langue"
+  },
+  "cancelOrderModal": {
+    "title": "Êtes-vous sûr de vouloir annuler cette commande?"
+  },
+  "deleteAccountModal": {
+    "title": "Êtes-vous sûr de vouloir supprimer votre compte? La suppression de votre compte n'annulera pas les commandes en cours que vous avez. Veuillez nous contacter si vous souhaitez annuler vos commandes"
   }
 }
