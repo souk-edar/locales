@@ -70,7 +70,7 @@
     "question1": "What is the cutoff time for next-day delivery?",
     "answer1": "The cutoff time for next-day delivery is at midnight. Orders placed before then will be delivered the following day between 12 PM and 8 PM.",
     "question2": "What is the required basket weight for checkout?",
-    "answer2": "The basket must weigh exactly 15 kg to check out. This is both the minimum and maximum allowable weight.",
+    "answer2": "The basket must weigh between 6 kg and 15 kg to checkout. This is the allowable weight range.",
     "question3": "How do I contact customer support?",
     "answer3": "You can contact customer support through the 'Profile' page. Use the form in the 'Customer support' page to send the support team a message.",
     "question4": "How can I update my delivery address?",
@@ -85,9 +85,9 @@
     "subtotal": "Subtotal",
     "delivery": "Delivery",
     "total": "Total",
-    "proceedToCheckout": "Proceed to checkout",
+    "proceedToCheckout": "Go to checkout",
     "proceedToCheckoutErrorTitle": "Error",
-    "proceedToCheckoutErrorDescription": "Your basket must contain {{maxOrderQuantity}} kg before you can proceed"
+    "proceedToCheckoutErrorDescription": "Your basket must contain {{maxOrderQuantity}} kg before you can checkout"
   },
   "signIn": {
     "title": "Sign in",
@@ -259,7 +259,7 @@
     "subTitle1": "Please choose a language to get started",
     "title2": "Customize your basket",
     "description2": "Customize your basket with our seasonal variety of fruits and vegetables",
-    "detail2": "Fill your basket with exactly 15 kg to be able to place an order",
+    "detail2": "Fill your basket with a minimum of 6 kg and a maximum of 15 kg to place an order",
     "title3": "Delivered fresh, straight to your doorstep",
     "description3": "Your order will be packed and sent out for delivery the next day",
     "detail3": "You can place one order per day and have 10 minutes to cancel, with cancellations closing at midnight",
@@ -349,11 +349,23 @@
     "viewDetails": "View details"
   },
   "exceptions": {
-    "dailyCancellationLimitReached": "Sorry, you have reached the daily cancellation limit of three. Please try again tomorrow to place a new order",
+    "dailyCancellationLimitReached": "Sorry, you have reached the daily cancellation limit of three orders. Please try again tomorrow to place a new order",
     "oneOrderPerDay": "Only one order per day is permitted. Be sure to come back tomorrow to secure your basket early!",
     "cancelOrderTimeout": "Unable to cancel order. Contact support if you wish to cancel",
     "forgotPasswordRequestCooldown": "Please wait before requesting a new code",
     "capacityLimitReached": "Sorry, we’ve reached our capacity for today and are unable to take new orders. Please try placing your order again tomorrow",
-    "cancelOrderMidnight": "Order cannot be cancelled after midnight"
+    "cancelOrderMidnight": "Order cannot be cancelled after midnight",
+    "dailyCancellationLimitReachedTitle": "Daily cancellation limit reached",
+    "oneOrderPerDayTitle": "One order per day limit",
+    "capacityLimitReachedTitle": "Capacity limit reached"
+  },
+  "changeLanguageModal": {
+    "title": "Change language"
+  },
+  "cancelOrderModal": {
+    "title": "Are you sure you want to cancel this order?"
+  },
+  "deleteAccountModal": {
+    "title": "Are you sure you want to delete your account? Deleting your account will not cancel any active orders you have. Please contact us if you wish to cancel your orders"
   }
 }
