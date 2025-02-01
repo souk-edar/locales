@@ -27,14 +27,15 @@
     "passwordResetError": "Échec de l'envoi de l'email de réinitialisation du mot de passe. Veuillez réessayer"
   },
   "profile": {
-    "verifyEmailBanner": "Vérifiez votre email pour passer des commandes. Cliquez ici!",
+    "verifyEmailBanner": "Vérifier votre e-mail pour passer des commandes",
     "title": "Profil",
     "signIn": "Se connecter",
     "myOrders": "Mes commandes",
     "customerSupport": "Support client",
     "faqs": "FAQs",
     "helpUsImprove": "Suggestions?",
-    "signOut": "Se déconnecter"
+    "signOut": "Se déconnecter",
+    "followUs": "Suivez-nous"
   },
   "orderHistory": {
     "title": "Mes commandes",
@@ -70,8 +71,7 @@
     "question1": "Quelle est l'heure limite pour la livraison le lendemain ?",
     "answer1": "L'heure limite pour la livraison le lendemain est à minuit. Les commandes passées avant seront livrées le lendemain entre 12h et 20h.",
     "question2": "Quel est le poids requis pour le panier lors du paiement ?",
-    "answer2": "Le panier doit peser entre 6 kg et 15 kg pour passer à l'achat. C'est la plage de poids autorisée.",
-    "question3": "Comment contacter le support client ?",
+    "answer2": "Le panier doit peser au moins 6 kg pour passer à l'achat.",    "question3": "Comment contacter le support client ?",
     "answer3": "Vous pouvez contacter le support client via la page 'Profil'. Utilisez le formulaire dans la page 'Support client' pour envoyer un message à l'équipe de support.",
     "question4": "Comment puis-je mettre à jour mon adresse de livraison ?",
     "answer4": "Actuellement, il n'y a aucun moyen de mettre à jour votre adresse directement dans l'application. Veuillez contacter notre équipe de support client pour mettre à jour votre adresse.",
@@ -105,6 +105,7 @@
   },
   "signUp": {
     "title": "S'inscrire",
+    "searchAddress": "Rechercher une adresse...",
     "locationStepTitle": "Définissez votre adresse",
     "addressStepTitle": "Confirmez l'adresse",
     "phoneNumberStepTitle": "Entrez le numéro de téléphone",
@@ -118,9 +119,9 @@
     "confirmPasswordLabel": "Confirmer le mot de passe",
     "firstNameLabel": "Prénom",
     "lastNameLabel": "Nom de famille",
-    "blocLabel": "Bloc / Numéro de rue",
-    "apartmentLabel": "Numéro d'appartement",
-    "neighborhoodLabel": "Quartier / Nom de rue",
+    "blocLabel": "Bloc",
+    "apartmentLabel": "Appartement",
+    "neighborhoodLabel": "Ville",
     "communeLabel": "Commune",
     "provinceLabel": "Wilaya",
     "postalCodeLabel": "Code postal",
@@ -259,7 +260,7 @@
     "subTitle1": "Veuillez choisir une langue pour commencer",
     "title2": "Personnalisez votre panier",
     "description2": "Personnalisez votre panier avec notre variété de fruits et légumes de saison",
-    "detail2": "Remplissez votre panier avec un minimum de 6 kg et maximum de 15 kg pour pouvoir passer une commande",
+    "detail2": "Remplissez votre panier avec un minimum de 6 kg pour pouvoir passer une commande",
     "title3": "Livré frais, directement à votre porte",
     "description3": "Votre commande sera emballée et expédiée pour livraison le lendemain",
     "detail3": "Vous pouvez passer une commande par jour et avez 10 minutes pour annuler, les annulations se terminent à minuit",
@@ -272,7 +273,8 @@
     "profile": "Profil",
     "orders": "Commandes",
     "delivery": "Livraison",
-    "inventory": "Inventaire"
+    "inventory": "Inventaire",
+    "basket": "Panier"
   },
   "trackYourOrder": {
     "title": "Suivez votre commande",
@@ -286,6 +288,7 @@
     "title": "Vérifier le compte",
     "enterCodePrompt": "Veuillez entrer le code envoyé à votre email pour terminer la configuration de votre compte",
     "resendPrompt": "Vous n'avez pas reçu le code ? Renvoyer",
+    "resendPromptWithTime": "Vous n'avez pas reçu le code ? Vous pouvez renvoyer dans {{seconds}} secondes",
     "verifyButton": "Vérifier le compte",
     "successTitle": "Succès!",
     "successMessage": "Votre compte a été vérifié avec succès",
@@ -367,5 +370,8 @@
   },
   "deleteAccountModal": {
     "title": "Êtes-vous sûr de vouloir supprimer votre compte? La suppression de votre compte n'annulera pas les commandes en cours que vous avez. Veuillez nous contacter si vous souhaitez annuler vos commandes"
+  },
+  "productItem": {
+    "outOfStockTitle": "Stock épuisé"
   }
 }
