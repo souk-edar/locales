@@ -27,14 +27,15 @@
     "passwordResetError": "Failed to send password reset email. Please try again"
   },
   "profile": {
-    "verifyEmailBanner": "Verify your email to place orders. Click here!",
+    "verifyEmailBanner": "Verify your email to place orders",
     "title": "Profile",
     "signIn": "Sign in",
     "myOrders": "My orders",
     "customerSupport": "Customer support",
     "faqs": "FAQs",
     "helpUsImprove": "Suggestions?",
-    "signOut": "Sign out"
+    "signOut": "Sign out",
+    "followUs": "Follow us"
   },
   "orderHistory": {
     "title": "My orders",
@@ -70,7 +71,7 @@
     "question1": "What is the cutoff time for next-day delivery?",
     "answer1": "The cutoff time for next-day delivery is at midnight. Orders placed before then will be delivered the following day between 12 PM and 8 PM.",
     "question2": "What is the required basket weight for checkout?",
-    "answer2": "The basket must weigh between 6 kg and 15 kg to checkout. This is the allowable weight range.",
+    "answer2": "The basket must weigh at least 6 kg to checkout",
     "question3": "How do I contact customer support?",
     "answer3": "You can contact customer support through the 'Profile' page. Use the form in the 'Customer support' page to send the support team a message.",
     "question4": "How can I update my delivery address?",
@@ -105,12 +106,13 @@
   },
   "signUp": {
     "title": "Sign Up",
+    "searchAddress": "Search an address...",
     "locationStepTitle": "Set your home address",
     "addressStepTitle": "Confirm address",
     "phoneNumberStepTitle": "Enter phone number",
     "profileStepTitle": "Complete your profile",
     "moveMapMessage": "Move the map to place the pin on your home address",
-    "confirmAddressMessage": "Please confirm your address including your bloc and apartment numbers",
+    "confirmAddressMessage": "Please confirm your address including your bloc and apartment number",
     "enterPhoneNumberMessage": "Please enter your phone number",
     "enterProfileMessage": "Last step! Please enter your email and password",
     "emailLabel": "Email",
@@ -118,9 +120,9 @@
     "confirmPasswordLabel": "Confirm Password",
     "firstNameLabel": "First Name",
     "lastNameLabel": "Last Name",
-    "blocLabel": "Bloc / Street number",
-    "apartmentLabel": "Apartment #",
-    "neighborhoodLabel": "Neighborhood / Street name",
+    "blocLabel": "Bloc",
+    "apartmentLabel": "Apartment",
+    "neighborhoodLabel": "City",
     "communeLabel": "Commune",
     "provinceLabel": "Wilaya",
     "postalCodeLabel": "Postal Code",
@@ -259,7 +261,7 @@
     "subTitle1": "Please choose a language to get started",
     "title2": "Customize your basket",
     "description2": "Customize your basket with our seasonal variety of fruits and vegetables",
-    "detail2": "Fill your basket with a minimum of 6 kg and a maximum of 15 kg to place an order",
+    "detail2": "Fill your basket with a minimum of 6 kg to place an order",
     "title3": "Delivered fresh, straight to your doorstep",
     "description3": "Your order will be packed and sent out for delivery the next day",
     "detail3": "You can place one order per day and have 10 minutes to cancel, with cancellations closing at midnight",
@@ -272,7 +274,8 @@
     "profile": "Profile",
     "orders": "Orders",
     "delivery": "Delivery",
-    "inventory": "Inventory"
+    "inventory": "Inventory",
+    "basket": "Basket"
   },
   "trackYourOrder": {
     "title": "Track your order",
@@ -286,6 +289,7 @@
     "title": "Verify account",
     "enterCodePrompt": "Please enter the code sent to your email to complete your account setup",
     "resendPrompt": "Did not receive the code? Resend",
+    "resendPromptWithTime": "Didn't receive the code? You can resend in {{seconds}} seconds",
     "verifyButton": "Verify account",
     "successTitle": "Success!",
     "successMessage": "Your account was successfully verified",
@@ -367,5 +371,8 @@
   },
   "deleteAccountModal": {
     "title": "Are you sure you want to delete your account? Deleting your account will not cancel any active orders you have. Please contact us if you wish to cancel your orders"
+  },
+  "productItem": {
+    "outOfStockTitle": "Out of Stock"
   }
 }
