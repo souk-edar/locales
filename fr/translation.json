@@ -27,7 +27,7 @@
     "passwordResetError": "Échec de l'envoi de l'email de réinitialisation du mot de passe. Veuillez réessayer"
   },
   "profile": {
-    "verifyEmailBanner": "Vérifier votre e-mail pour passer des commandes",
+    "verifyEmailBanner": "Vérifier votre email pour passer des commandes",
     "title": "Profil",
     "signIn": "Se connecter",
     "myOrders": "Mes commandes",
@@ -68,14 +68,15 @@
   "faq": {
     "title": "FAQs",
     "description": "Questions fréquemment posées",
-    "question1": "Quelle est l'heure limite pour la livraison le lendemain ?",
+    "question1": "Quelle est l'heure limite pour la livraison le lendemain?",
     "answer1": "L'heure limite pour la livraison le lendemain est à minuit. Les commandes passées avant seront livrées le lendemain entre 12h et 20h.",
-    "question2": "Quel est le poids requis pour le panier lors du paiement ?",
-    "answer2": "Le panier doit peser au moins 6 kg pour passer à l'achat.",    "question3": "Comment contacter le support client ?",
+    "question2": "Quel est le poids requis pour le panier lors du paiement?",
+    "answer2": "Le panier doit peser au moins 6 kg pour passer à l'achat.",
+    "question3": "Comment contacter le support client?",
     "answer3": "Vous pouvez contacter le support client via la page 'Profil'. Utilisez le formulaire dans la page 'Support client' pour envoyer un message à l'équipe de support.",
-    "question4": "Comment puis-je mettre à jour mon adresse de livraison ?",
+    "question4": "Comment puis-je mettre à jour mon adresse de livraison?",
     "answer4": "Actuellement, il n'y a aucun moyen de mettre à jour votre adresse directement dans l'application. Veuillez contacter notre équipe de support client pour mettre à jour votre adresse.",
-    "question5": "Comment puis-je réinitialiser mon mot de passe ?",
+    "question5": "Comment puis-je réinitialiser mon mot de passe?",
     "answer5": "Pour réinitialiser votre mot de passe, allez à la page 'Profil'. Cliquez sur votre nom pour accéder à la page 'Modifier le profil', puis cliquez sur 'Demander un nouveau mot de passe'."
   },
   "order": {
@@ -212,7 +213,7 @@
   "unsupportedRegion": {
     "title": "Bientôt disponible...",
     "description": "Nous nous développons! Abonnez-vous à notre newsletter pour savoir quand nous arriverons dans votre région!",
-    "emailLabel": "E-mail",
+    "emailLabel": "Email",
     "emailPlaceholder": "client@mail.com",
     "subscribeButton": "S'abonner",
     "goBackButton": "Retour",
@@ -287,13 +288,13 @@
   "verifyOtp": {
     "title": "Vérifier le compte",
     "enterCodePrompt": "Veuillez entrer le code envoyé à votre email pour terminer la configuration de votre compte",
-    "resendPrompt": "Vous n'avez pas reçu le code ? Renvoyer",
-    "resendPromptWithTime": "Vous n'avez pas reçu le code ? Vous pouvez renvoyer dans {{seconds}} secondes",
+    "resendPrompt": "Vous n'avez pas reçu le code? Renvoyer",
+    "resendPromptWithTime": "Vous n'avez pas reçu le code? Vous pouvez renvoyer dans {{seconds}} secondes",
     "verifyButton": "Vérifier le compte",
     "successTitle": "Succès!",
     "successMessage": "Votre compte a été vérifié avec succès",
     "errorMessage": "Vous avez entré un code invalide. Veuillez réessayer",
-    "sendEmailMessageTitle": "E-mail envoyé!",
+    "sendEmailMessageTitle": "Email envoyé!",
     "sendEmailMessage": "Un nouveau code a été envoyé à votre email",
     "errorTitle": "Oups!",
     "sendErrorMessage": "Échec de l'envoi d'un nouveau code. Veuillez réessayer plus tard"
