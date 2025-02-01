@@ -106,7 +106,7 @@
   },
   "signUp": {
     "title": "إنشاء حساب",
-    "searchAddress": "ابحث عن عنوان...",
+    "searchAddress": "ابحث عن العنوان...",
     "locationStepTitle": "حدد عنوان منزلك",
     "addressStepTitle": "تأكيد العنوان",
     "phoneNumberStepTitle": "أدخل رقم الهاتف",
@@ -127,7 +127,7 @@
     "provinceLabel": "الولاية",
     "postalCodeLabel": "الرقم البريدي",
     "phoneNumberLabel": "رقم الهاتف",
-    "countryCodeLabel": "رمز الدولة",
+    "countryCodeLabel": "رقم الدولة",
     "privacyPolicy": "سياسة الخصوصية",
     "termsOfService": "شروط الخدمة",
     "agreementCheckbox": "أوافق على سياسة الخصوصية وشروط الخدمة",
