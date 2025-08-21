@@ -1,15 +1,16 @@
 {
   "home": {
-    "welcomeUserMessage": "مرحبًا، {{name}}!",
-    "welcomeMessage": "مرحبًا!",
-    "thankYouText": "لقد استلمنا طلبك لليوم. شكرًا لك!",
+    "welcomeUserMessage": "أهلًا وسهلًا، {{name}}",
+    "welcomeMessage": "أهلًا وسهلًا",
+    "thankYouText": "لقد استلمنا طلبك لليوم!",
     "hurryUpText": "سارع في تقديم طلبك!",
     "nowAcceptingText": "نستقبل الطلبات ليوم {{date}}",
     "remainingSpacesText": "تبقى {{spaces}} مكانًا",
     "viewCatalogue": "عرض الكتالوج",
     "giveCode": "أعط هذا الرمز لسائق التوصيل لاستلام طلبك",
     "yourOrderFor": "طلبك ليوم {{day}}",
-    "capacityLimitReached": "عذرًا، لقد وصلنا إلى الحد الأقصى ولا يمكننا قبول طلبات جديدة الآن"
+    "capacityLimitReached": "عذرًا، لقد وصلنا إلى الحد الأقصى ولا يمكننا قبول طلبات جديدة الآن",
+    "completePayment": "ادفع الآن"
   },
   "catalogue": {
     "categories": "الفئات",
@@ -31,11 +32,13 @@
     "title": "الملف الشخصي",
     "signIn": "تسجيل الدخول",
     "myOrders": "طلباتي",
-    "customerSupport": "دعم الزبائن",
+    "customerSupport": "اتصل بنا",
+    "callSupport": "اتصل بالدعم",
     "faqs": "الأسئلة الشائعة",
     "helpUsImprove": "إقتراحات؟",
     "signOut": "تسجيل الخروج",
-    "followUs": "تابعنا"
+    "followUs": "تابعنا",
+    "deliverWithUs": "انضم كسائق توصيل"
   },
   "orderHistory": {
     "title": "طلباتي",
@@ -67,28 +70,19 @@
   },
   "faq": {
     "title": "الأسئلة المتداولة",
-    "description": "الأسئلة المتداولة",
-    "question1": "ما هو الوقت النهائي للتوصيل اليوم التالي؟",
-    "answer1": "الوقت النهائي للتوصيل اليوم التالي هو منتصف الليل. الطلبات المقدمة قبل ذلك سيتم توصيلها في اليوم التالي بين الساعة 12 ظهرًا و 8 مساءً.",
-    "question2": "ما هو وزن السلة المطلوب لإتمام عملية الشراء؟",
-    "answer2": "يجب أن يكون وزن السلة 6 كجم على الأقل لإتمام عملية الشراء.",
-    "question3": "كيف أتواصل مع دعم الزبائن؟",
-    "answer3": "يمكنك التواصل مع دعم العملاء من خلال صفحة 'الملف الشخصي'. استخدم النموذج في صفحة 'دعم الزبائن' لإرسال رسالة لفريق الدعم.",
-    "question4": "كيف يمكنني تحديث عنوان التوصيل الخاص بي؟",
-    "answer4": "حاليًا، لا توجد طريقة لتحديث العنوان مباشرةً في التطبيق. يرجى الاتصال بفريق دعم الزبائن لتحديث عنوانك.",
-    "question5": "كيف يمكنني إعادة تعيين كلمة السر الخاصة بي؟",
-    "answer5": "لإعادة تعيين كلمة السر، اذهب إلى صفحة 'الملف الشخصي'. اضغط على اسمك للوصول إلى صفحة 'تعديل الملف الشخصي'، ثم اضغط على 'طلب كلمة سر جديدة'."
+    "description": "الأسئلة المتداولة"
   },
   "order": {
     "title": "السلة",
     "emptyMessage": "سلتك فارغة!",
     "emptyDescription": "أضف بعض الفواكه والخضروات الطازجة إلى سلتك للبدء",
     "subtotal": "المجموع الفرعي",
-    "delivery": "التوصيل",
+    "delivery": "رسوم التوصيل",
     "total": "الإجمالي",
     "proceedToCheckout": "المتابعة إلى الدفع",
     "proceedToCheckoutErrorTitle": "خطأ",
-    "proceedToCheckoutErrorDescription": "يجب أن تحتوي سلتك على {{maxOrderQuantity}} كجم قبل المتابعة"
+    "proceedToCheckoutErrorDescription": "يجب أن تحتوي سلتك على {{maxOrderQuantity}} كجم قبل المتابعة",
+    "minRequiredToCheckout": "الحد الأدنى المطلوب {{minOrderKg}} كجم للمتابعة"
   },
   "signIn": {
     "title": "تسجيل الدخول",
@@ -108,11 +102,11 @@
     "title": "إنشاء حساب",
     "searchAddress": "ابحث عن العنوان...",
     "locationStepTitle": "حدد عنوان منزلك",
-    "addressStepTitle": "تأكيد العنوان",
+    "addressStepTitle": "حدد عنوان منزلك",
     "phoneNumberStepTitle": "أدخل رقم الهاتف",
     "profileStepTitle": "أكمل ملفك الشخصي",
-    "moveMapMessage": "حرك الخريطة لوضع الدبوس على عنوان منزلك",
-    "confirmAddressMessage": "يرجى تأكيد عنوانك بما في ذلك رقم العمارة والشقة",
+    "moveMapMessage": "حرّك الخريطة لتحديد العنوان",
+    "confirmAddressMessage": "تأكد من أنك في المنزل أثناء التسجيل. سيتم التقاط موقعك تلقائيًا",
     "enterPhoneNumberMessage": "يرجى إدخال رقم هاتفك",
     "enterProfileMessage": "الخطوة الأخيرة! يرجى إدخال بريدك الإلكتروني وكلمة السر",
     "emailLabel": "البريد الإلكتروني",
@@ -174,6 +168,9 @@
     "errorTitle": "عذرًا!",
     "errorMessage": "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا"
   },
+  "locationThumbnail": {
+    "editPinLocation": "تعديل موقع العلامة"
+  },
   "forgotPassword": {
     "title": "نسيت كلمة المرور",
     "enterEmailMessage": "أدخل بريدك الإلكتروني لتلقي رابط إعادة تعيين كلمة المرور",
@@ -197,7 +194,15 @@
     "placeOrderButton": "تقديم الطلب",
     "successTitle": "تم تقديم الطلب بنجاح!",
     "errorTitle": "فشل الطلب",
-    "orderSummaryNoItems": "لا توجد عناصر في سلتك"
+    "orderSummaryNoItems": "لا توجد عناصر في سلتك",
+    "expectedDeliveryDateTitle": "تاريخ التوصيل المتوقع",
+    "deliveryCredit": "رصيد التوصيل",
+    "deliveryFee": "رسوم التوصيل",
+    "baseDeliveryFee": "رسوم التوصيل الأساسية",
+    "discount": "خصم على التوصيل",
+    "deliveryFeeDescription": "يشمل الإجمالي رسوم التوصيل بقيمة {{amount}} {{currency}}",
+    "digitalPayment": "الدفع الإلكتروني",
+    "digitalPaymentMessage": "يتم الدفع عند تحضير الطلبية"
   },
   "helpUsImprove": {
     "title": "إقتراحات؟",
@@ -250,7 +255,14 @@
     "totalColumn": "الإجمالي",
     "thankYouMessage": "شكرًا لطلبك!",
     "footerMessage": "© فلاح الدار {{year}}",
-    "viewOrdersButton": "عرض الطلبات"
+    "viewOrdersButton": "عرض الطلبات",
+    "subtotal": "المجموع الفرعي",
+    "deliveryFee": "رسوم التوصيل",
+    "deliveryCreditLabel": "وفرت {{amount}} {{currency}} على التوصيل",
+    "refundedOnLabel": "تم استرداد المبلغ في {{date}}",
+    "refundRequestSentOnLabel": "تم إرسال طلب الاسترداد في {{date}}",
+    "digitalPaymentMessage": "يتم الدفع عند تحضير الطلبية",
+    "digitalPaymentRequired": "الدفع مستحق"
   },
   "orderItem": {
     "swipeToDelete": "مرر للحذف"
@@ -261,10 +273,9 @@
     "subTitle1": "يرجى اختيار اللغة للبدء",
     "title2": "خصص سلتك",
     "description2": "خصص سلتك مع مجموعة متنوعة من الفواكه والخضروات الموسمية",
-    "detail2": "املأ سلتك بحد أدنى 6 كجم لتتمكن من تقديم طلب",
     "title3": "توصيل طازج، مباشرة إلى باب منزلك",
-    "description3": "سيتم تعبئة طلبك وإرساله للتوصيل في اليوم التالي",
-    "detail3": "يمكنك تقديم طلب واحد يوميًا ولديك 10 دقائق لإلغاء الطلب، مع انتهاء فترة الإلغاء عند منتصف الليل",
+    "description3": "الطلبات التي تُجرى قبل الساعة 6 مساءً سيتم توصيلها خلال ساعتين. أما الطلبات المتأخرة، فسيتم توصيلها في اليوم التالي",
+    "detail3": "يمكنك تقديم طلب واحد في اليوم",
     "getStartedButton": "ابدأ",
     "nextButton": "التالي"
   },
@@ -358,10 +369,14 @@
     "cancelOrderTimeout": "لا يمكن إلغاء الطلب. يرجى التواصل مع الدعم إذا كنت ترغب في الإلغاء",
     "forgotPasswordRequestCooldown": "يرجى الانتظار قبل طلب رمز جديد",
     "capacityLimitReached": "عذرًا، لقد وصلنا إلى الحد الأقصى للطلبات اليوم ولا يمكننا قبول طلبات جديدة. يرجى المحاولة مرة أخرى غدًا",
-    "cancelOrderMidnight": "لا يمكن إلغاء الطلب بعد منتصف الليل",
+    "cancelOrderMidnight": "لا يمكن إلغاء الطلب بعد الوقت المسموح به",
     "dailyCancellationLimitReachedTitle": "تم الوصول إلى الحد اليومي للإلغاء",
     "oneOrderPerDayTitle": "حد طلب واحد في اليوم",
-    "capacityLimitReachedTitle": "تم الوصول إلى الحد الأقصى للسعة"
+    "capacityLimitReachedTitle": "تم الوصول إلى الحد الأقصى للسعة",
+    "orderingDisabledTitle": "تم تعطيل الطلب",
+    "orderingDisabled": "الطلب غير متاح مؤقتًا. سنعود قريبًا!",
+    "digitalPaymentFailedTitle": "فشل الدفع",
+    "digitalPaymentFailed": "تعذر إتمام الدفع. الرجاء المحاولة مرة أخرى أو اختيار طريقة دفع أخرى"
   },
   "changeLanguageModal": {
     "title": "اختر اللغة"
@@ -374,5 +389,40 @@
   },
   "productItem": {
     "outOfStockTitle": "نفدت الكمية"
+  },
+  "permissionModal": {
+    "locationPermissionNeeded": "مطلوب إذن الموقع",
+    "locationPermissionDescription": "يتطلب هذا التطبيق الوصول إلى الموقع ليعمل بشكل صحيح. يُرجى تمكين أذونات الموقع في إعدادات جهازك",
+    "cancelButton": "إلغاء",
+    "openSettingsButton": "فتح الإعدادات"
+  },
+  "gpsRequiredModal": {
+    "enableLocationServices": "تمكين خدمات الموقع",
+    "locationServicesDescription": "خدمات الموقع (GPS) لديك معطلة حاليًا. يُرجى تمكينها في إعدادات جهازك للمتابعة",
+    "cancelButton": "إلغاء",
+    "openSettingsButton": "فتح الإعدادات"
+  },
+  "whatsNewModal": {
+    "learnMoreButton": "اعرف المزيد"
+  },
+  "deliveryCreditModal": {
+    "modalTitle": "كيف يتم احتساب هذه الرسوم؟",
+    "deliveryFeeTitle": "رسوم التوصيل",
+    "deliveryDiscountTitle": "خصم التوصيل",
+    "deliveryDiscountDescription": "ابتداءً من 2000 دينار، نغطي 100 دينار عن كل 1000 دينار تنفقها على طلبك",
+    "orderAmountHeader": "الحد الأدنى لقيمة الطلب",
+    "youSaveTitle": "التوفير",
+    "freeDelivery": "توصيل مجاني",
+    "deliveryFeeDescription": "تُحتسب رسوم التوصيل بناءً على المسافة بين عنوان العميل ومتجرنا",
+    "totalTitle": "المجموع"
+  },
+  "paymentProcessing": {
+    "title": "أكمل عملية الدفع",
+    "loading": "جارٍ التحميل...",
+    "processingYourPayment": "جارٍ معالجة دفعتك",
+    "paymentTimeoutTitle": "انتهاء المهلة",
+    "paymentTimeoutMessage": "انتهت صلاحية جلسة الدفع الخاصة بك. يرجى المحاولة مرة أخرى",
+    "paymentFailedTitle": "فشل الدفع",
+    "paymentFailedMessage": "تعذر إتمام الدفع. الرجاء المحاولة مرة أخرى أو اختيار طريقة دفع أخرى"
   }
 }
