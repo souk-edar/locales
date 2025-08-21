@@ -2,14 +2,15 @@
   "home": {
     "welcomeUserMessage": "Bienvenue, {{name}}!",
     "welcomeMessage": "Bienvenue!",
-    "thankYouText": "Nous avons reçu votre commande pour aujourd'hui. Merci!",
+    "thankYouText": "Nous avons reçu votre commande pour aujourd'hui!",
     "hurryUpText": "Dépêchez-vous de passer votre commande !",
     "nowAcceptingText": "Nous acceptons maintenant les commandes pour le {{date}}",
     "remainingSpacesText": "Il reste {{spaces}} places",
     "viewCatalogue": "Voir le catalogue",
     "giveCode": "Donnez ce code au livreur pour recevoir votre commande",
     "yourOrderFor": "Votre commande du {{day}}",
-    "capacityLimitReached": "Désolé, nous avons atteint notre capacité et ne pouvons pas accepter de nouvelles commandes pour le moment"
+    "capacityLimitReached": "Désolé, nous avons atteint notre capacité et ne pouvons pas accepter de nouvelles commandes pour le moment",
+    "completePayment": "Payer maintenant"
   },
   "catalogue": {
     "categories": "Catégories",
@@ -31,11 +32,13 @@
     "title": "Profil",
     "signIn": "Se connecter",
     "myOrders": "Mes commandes",
-    "customerSupport": "Support client",
+    "customerSupport": "Contactez-nous",
+    "callSupport": "Appeler le support",
     "faqs": "FAQs",
     "helpUsImprove": "Suggestions?",
     "signOut": "Se déconnecter",
-    "followUs": "Suivez-nous"
+    "followUs": "Suivez-nous",
+    "deliverWithUs": "Devenez Livreur"
   },
   "orderHistory": {
     "title": "Mes commandes",
@@ -67,28 +70,19 @@
   },
   "faq": {
     "title": "FAQs",
-    "description": "Questions fréquemment posées",
-    "question1": "Quelle est l'heure limite pour la livraison le lendemain?",
-    "answer1": "L'heure limite pour la livraison le lendemain est à minuit. Les commandes passées avant seront livrées le lendemain entre 12h et 20h.",
-    "question2": "Quel est le poids requis pour le panier lors du paiement?",
-    "answer2": "Le panier doit peser au moins 6 kg pour passer à l'achat.",
-    "question3": "Comment contacter le support client?",
-    "answer3": "Vous pouvez contacter le support client via la page 'Profil'. Utilisez le formulaire dans la page 'Support client' pour envoyer un message à l'équipe de support.",
-    "question4": "Comment puis-je mettre à jour mon adresse de livraison?",
-    "answer4": "Actuellement, il n'y a aucun moyen de mettre à jour votre adresse directement dans l'application. Veuillez contacter notre équipe de support client pour mettre à jour votre adresse.",
-    "question5": "Comment puis-je réinitialiser mon mot de passe?",
-    "answer5": "Pour réinitialiser votre mot de passe, allez à la page 'Profil'. Cliquez sur votre nom pour accéder à la page 'Modifier le profil', puis cliquez sur 'Demander un nouveau mot de passe'."
+    "description": "Questions fréquemment posées"
   },
   "order": {
     "title": "Panier",
     "emptyMessage": "Votre panier est vide!",
     "emptyDescription": "Ajoutez des fruits et légumes frais à votre panier pour commencer",
     "subtotal": "Sous-total",
-    "delivery": "Livraison",
+    "delivery": "Frais de livraison",
     "total": "Total",
     "proceedToCheckout": "Procéder au paiement",
     "proceedToCheckoutErrorTitle": "Erreur",
-    "proceedToCheckoutErrorDescription": "Votre panier doit contenir {{maxOrderQuantity}} kg avant de pouvoir continuer"
+    "proceedToCheckoutErrorDescription": "Votre panier doit contenir {{maxOrderQuantity}} kg avant de pouvoir continuer",
+    "minRequiredToCheckout": "Min. {{minOrderKg}} kg requis"
   },
   "signIn": {
     "title": "Connexion",
@@ -108,11 +102,11 @@
     "title": "S'inscrire",
     "searchAddress": "Rechercher une adresse...",
     "locationStepTitle": "Définissez votre adresse",
-    "addressStepTitle": "Confirmez l'adresse",
+    "addressStepTitle": "Définissez votre adresse domicile",
     "phoneNumberStepTitle": "Entrez le numéro de téléphone",
     "profileStepTitle": "Complétez votre profil",
-    "moveMapMessage": "Déplacez la carte pour placer l'épingle sur votre adresse de domicile",
-    "confirmAddressMessage": "Veuillez confirmer votre adresse y compris le numéro du bloc et de l'appartement",
+    "moveMapMessage": "Déplacez la carte pour choisir",
+    "confirmAddressMessage": "Assurez-vous d'être chez vous lors de l'inscription. Votre position sera capturée automatiquement",
     "enterPhoneNumberMessage": "Veuillez entrer votre numéro de téléphone",
     "enterProfileMessage": "Dernière étape ! Veuillez entrer votre email et mot de passe",
     "emailLabel": "Email",
@@ -174,6 +168,9 @@
     "errorTitle": "Oups!",
     "errorMessage": "Une erreur est survenue. Veuillez réessayer plus tard"
   },
+  "locationThumbnail": {
+    "editPinLocation": "Modifier l'emplacement"
+  },
   "forgotPassword": {
     "title": "Mot de passe oublié",
     "enterEmailMessage": "Entrez votre email pour recevoir un lien de réinitialisation de mot de passe",
@@ -193,11 +190,19 @@
     "paymentMethodTitle": "Méthode de paiement",
     "commentLabel": "Commentaire",
     "commentPlaceholder": "Entrez les détails de la livraison ici",
-    "paymentMethodValue": "Paiement à la livraison",
+    "paymentMethodValue": "Paiement en espèces à la livraison",
     "placeOrderButton": "Passer la commande",
     "successTitle": "Commande passée avec succès!",
     "errorTitle": "Échec de la commande",
-    "orderSummaryNoItems": "Aucun article dans votre panier"
+    "orderSummaryNoItems": "Aucun article dans votre panier",
+    "expectedDeliveryDateTitle": "Date de livraison estimée",
+    "deliveryCredit": "Crédit de livraison",
+    "deliveryFee": "Frais de livraison",
+    "baseDeliveryFee": "Frais de livraison de base",
+    "discount": "Réduction sur la livraison",
+    "deliveryFeeDescription": "Le total inclut des frais de livraison de {{amount}} {{currency}}",
+    "digitalPayment": "E-paiement",
+    "digitalPaymentMessage": "Le paiement sera demandé une fois la commande emballée"
   },
   "helpUsImprove": {
     "title": "Suggestions?",
@@ -250,7 +255,14 @@
     "totalColumn": "Total",
     "thankYouMessage": "Merci pour votre commande!",
     "footerMessage": "© Fellah-eDar, {{year}}",
-    "viewOrdersButton": "Voir les commandes"
+    "viewOrdersButton": "Voir les commandes",
+    "subtotal": "Sous-total",
+    "deliveryFee": "Frais de livraison",
+    "deliveryCreditLabel": "Économisé {{amount}} {{currency}} sur livraison",
+    "refundedOnLabel": "Remboursé le {{date}}",
+    "refundRequestSentOnLabel": "Demande de remboursement envoyée le {{date}}",
+    "digitalPaymentMessage": "Paiement requis une fois la commande emballée",
+    "digitalPaymentRequired": "Paiement requis"
   },
   "orderItem": {
     "swipeToDelete": "Glisser pour supprimer"
@@ -261,10 +273,9 @@
     "subTitle1": "Veuillez choisir une langue pour commencer",
     "title2": "Personnalisez votre panier",
     "description2": "Personnalisez votre panier avec notre variété de fruits et légumes de saison",
-    "detail2": "Remplissez votre panier avec un minimum de 6 kg pour pouvoir passer une commande",
     "title3": "Livré frais, directement à votre porte",
-    "description3": "Votre commande sera emballée et expédiée pour livraison le lendemain",
-    "detail3": "Vous pouvez passer une commande par jour et avez 10 minutes pour annuler, les annulations se terminent à minuit",
+    "description3": "Les commandes passées avant 18h seront livrées dans les deux prochaines heures. Sinon, elles seront livrées le lendemain",
+    "detail3": "Vous pouvez passer une commande par jour",
     "getStartedButton": "Commencer",
     "nextButton": "Suivant"
   },
@@ -358,10 +369,14 @@
     "cancelOrderTimeout": "Impossible d'annuler la commande. Contactez le support si vous souhaitez annuler",
     "forgotPasswordRequestCooldown": "Veuillez patienter avant de demander un nouveau code",
     "capacityLimitReached": "Désolé, nous avons atteint notre capacité pour aujourd'hui et ne pouvons pas accepter de nouvelles commandes. Veuillez réessayer de passer votre commande demain",
-    "cancelOrderMidnight": "La commande ne peut pas être annulée après minuit",
+    "cancelOrderMidnight": "La commande ne peut pas être annulée après l'heure autorisée",
     "dailyCancellationLimitReachedTitle": "Limite quotidienne d'annulation atteinte",
     "oneOrderPerDayTitle": "Limite d'une commande par jour",
-    "capacityLimitReachedTitle": "Limite de capacité atteinte"
+    "capacityLimitReachedTitle": "Limite de capacité atteinte",
+    "orderingDisabledTitle": "Prise de commande désactivée",
+    "orderingDisabled": "La prise de commandes est temporairement indisponible. Nous serons de retour bientôt!",
+    "digitalPaymentFailedTitle": "Échec du paiement",
+    "digitalPaymentFailed": "Le paiement n’a pas pu être effectué. Veuillez réessayer ou choisir un autre mode de paiement"
   },
   "changeLanguageModal": {
     "title": "Choisir la langue"
@@ -374,5 +389,40 @@
   },
   "productItem": {
     "outOfStockTitle": "Stock épuisé"
+  },
+  "permissionModal": {
+    "locationPermissionNeeded": "Autorisation de Localisation Requise",
+    "locationPermissionDescription": "Cette application nécessite l'accès à la localisation pour fonctionner correctement. Veuillez activer les autorisations de localisation dans les paramètres de votre appareil",
+    "cancelButton": "Annuler",
+    "openSettingsButton": "Paramètres"
+  },
+  "gpsRequiredModal": {
+    "enableLocationServices": "Activer les Services de Localisation",
+    "locationServicesDescription": "Vos services de localisation (GPS) sont actuellement désactivés. Veuillez les activer dans les paramètres de votre appareil pour continuer",
+    "cancelButton": "Annuler",
+    "openSettingsButton": "Paramètres"
+  },
+  "whatsNewModal": {
+    "learnMoreButton": "En savoir plus"
+  },
+  "deliveryCreditModal": {
+    "modalTitle": "Comment ces frais sont-ils calculés?",
+    "deliveryFeeTitle": "Frais de livraison",
+    "deliveryDiscountTitle": "Réduction sur la livraison",
+    "deliveryDiscountDescription": "À partir de 2000 DZD, pour chaque tranche de 1000 DZD dépensée, nous couvrons 100 DZD",
+    "orderAmountHeader": "Montant min.",
+    "youSaveTitle": "Vous économisez",
+    "freeDelivery": "Livraison gratuite",
+    "deliveryFeeDescription": "Les frais de livraison sont établis selon la distance de l’adresse du client par rapport à notre magasin",
+    "totalTitle": "Total"
+  },
+  "paymentProcessing": {
+    "title": "Finalisez votre paiement",
+    "loading": "Chargement...",
+    "processingYourPayment": "Traitement de votre paiement",
+    "paymentTimeoutTitle": "Expiration du paiement",
+    "paymentTimeoutMessage": "Votre session de paiement a expiré. Veuillez réessayer",
+    "paymentFailedTitle": "Échec du paiement",
+    "paymentFailedMessage": "Le paiement n’a pas pu être effectué. Veuillez réessayer ou choisir un autre mode de paiement"
   }
 }
