@@ -2,14 +2,15 @@
   "home": {
     "welcomeUserMessage": "Welcome, {{name}}!",
     "welcomeMessage": "Welcome!",
-    "thankYouText": "We’ve received your order for today. Thank you!",
+    "thankYouText": "We’ve received your order for today!",
     "hurryUpText": "Hurry up and place your order!",
     "nowAcceptingText": "Now accepting orders for {{date}}",
     "remainingSpacesText": "{{spaces}} spaces left",
     "viewCatalogue": "View Catalogue",
     "giveCode": "Give this code to the delivery driver to receive your order",
     "yourOrderFor": "Your {{day}}'s order",
-    "capacityLimitReached": "Sorry, we’re at capacity and can’t take new orders right now"
+    "capacityLimitReached": "Sorry, we’re at capacity and can’t take new orders right now",
+    "completePayment": "Pay now"
   },
   "catalogue": {
     "categories": "Categories",
@@ -31,11 +32,13 @@
     "title": "Profile",
     "signIn": "Sign in",
     "myOrders": "My orders",
-    "customerSupport": "Customer support",
+    "callSupport": "Call support",
+    "customerSupport": "Contact Us",
     "faqs": "FAQs",
     "helpUsImprove": "Suggestions?",
     "signOut": "Sign out",
-    "followUs": "Follow us"
+    "followUs": "Follow us",
+    "deliverWithUs": "Deliver with Us"
   },
   "orderHistory": {
     "title": "My orders",
@@ -67,28 +70,19 @@
   },
   "faq": {
     "title": "FAQs",
-    "description": "Frequently Asked Questions",
-    "question1": "What is the cutoff time for next-day delivery?",
-    "answer1": "The cutoff time for next-day delivery is at midnight. Orders placed before then will be delivered the following day between 12 PM and 8 PM.",
-    "question2": "What is the required basket weight for checkout?",
-    "answer2": "The basket must weigh at least 6 kg to checkout",
-    "question3": "How do I contact customer support?",
-    "answer3": "You can contact customer support through the 'Profile' page. Use the form in the 'Customer support' page to send the support team a message.",
-    "question4": "How can I update my delivery address?",
-    "answer4": "Currently, there is no way to update your address directly in the app. Please contact our customer support team to update your address.",
-    "question5": "How can I reset my password?",
-    "answer5": "To reset your password, go to the 'Profile' page. Click on your name to access the 'Edit profile' page, then click on 'Request new password'."
+    "description": "Frequently Asked Questions"
   },
   "order": {
     "title": "Basket",
     "emptyMessage": "Your basket is empty!",
     "emptyDescription": "Add some fresh fruits and vegetables to your cart to get started",
     "subtotal": "Subtotal",
-    "delivery": "Delivery",
+    "delivery": "Delivery Fee",
     "total": "Total",
     "proceedToCheckout": "Go to checkout",
     "proceedToCheckoutErrorTitle": "Error",
-    "proceedToCheckoutErrorDescription": "Your basket must contain {{maxOrderQuantity}} kg before you can checkout"
+    "proceedToCheckoutErrorDescription": "Your basket must contain {{maxOrderQuantity}} kg before you can checkout",
+    "minRequiredToCheckout": "Min. {{minOrderKg}} kg required"
   },
   "signIn": {
     "title": "Sign in",
@@ -107,12 +101,12 @@
   "signUp": {
     "title": "Sign Up",
     "searchAddress": "Search an address...",
-    "locationStepTitle": "Set your home address",
-    "addressStepTitle": "Confirm address",
+    "locationStepTitle": "Set your delivery address",
+    "addressStepTitle": "Set your home address",
     "phoneNumberStepTitle": "Enter phone number",
     "profileStepTitle": "Complete your profile",
-    "moveMapMessage": "Move the map to place the pin on your home address",
-    "confirmAddressMessage": "Please confirm your address including your bloc and apartment number",
+    "moveMapMessage": "Move map to set address",
+    "confirmAddressMessage": "Ensure you're at home during registration. Your location will be captured automatically",
     "enterPhoneNumberMessage": "Please enter your phone number",
     "enterProfileMessage": "Last step! Please enter your email and password",
     "emailLabel": "Email",
@@ -174,6 +168,9 @@
     "errorTitle": "Error",
     "errorMessage": "An error occurred. Please try again later"
   },
+  "locationThumbnail": {
+    "editPinLocation": "Edit Pin Location"
+  },
   "forgotPassword": {
     "title": "Forgot password",
     "enterEmailMessage": "Enter your email to receive a link to reset your password",
@@ -197,7 +194,15 @@
     "placeOrderButton": "Place order",
     "successTitle": "Order placed successfully!",
     "errorTitle": "Order failed",
-    "orderSummaryNoItems": "No items in your cart"
+    "orderSummaryNoItems": "No items in your cart",
+    "expectedDeliveryDateTitle": "Expected Delivery Date",
+    "deliveryCredit": "Delivery Credit",
+    "deliveryFee": "Delivery Fee",
+    "baseDeliveryFee": "Base Delivery Fee",
+    "discount": "Delivery Discount",
+    "deliveryFeeDescription": "Total includes {{amount}} {{currency}} delivery fee",
+    "digitalPayment": "E-payment",
+    "digitalPaymentMessage": "Payment will be requested once your order is packed"
   },
   "helpUsImprove": {
     "title": "Suggestions?",
@@ -231,7 +236,7 @@
     "title": "Something went wrong",
     "description": "Please contact support for assistance",
     "errorLabel": "Error",
-    "returnHomeButton": "Return to home"
+    "returnHomeButton": "Return home"
   },
   "orderSuccessful": {
     "headerTitle": "Order Confirmed",
@@ -250,7 +255,14 @@
     "totalColumn": "Total",
     "thankYouMessage": "Thank you for your order!",
     "footerMessage": "© Fellah-eDar, {{year}}",
-    "viewOrdersButton": "View orders"
+    "viewOrdersButton": "View orders",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Delivery Fee",
+    "deliveryCreditLabel": "Saved {{amount}} {{currency}} on delivery",
+    "refundedOnLabel": "Refunded on {{date}}",
+    "refundRequestSentOnLabel": "Refund request sent on {{date}}",
+    "digitalPaymentMessage": "Payment due when order is packed",
+    "digitalPaymentRequired": "Payment required"
   },
   "orderItem": {
     "swipeToDelete": "Swipe to delete"
@@ -261,10 +273,9 @@
     "subTitle1": "Please choose a language to get started",
     "title2": "Customize your basket",
     "description2": "Customize your basket with our seasonal variety of fruits and vegetables",
-    "detail2": "Fill your basket with a minimum of 6 kg to place an order",
     "title3": "Delivered fresh, straight to your doorstep",
-    "description3": "Your order will be packed and sent out for delivery the next day",
-    "detail3": "You can place one order per day and have 10 minutes to cancel, with cancellations closing at midnight",
+    "description3": "Orders placed before 6 pm will be delivered within the next two hours. Otherwise, they’ll be delivered the next day",
+    "detail3": "You can place one order per day",
     "getStartedButton": "Get started",
     "nextButton": "Next"
   },
@@ -358,10 +369,14 @@
     "cancelOrderTimeout": "Unable to cancel order. Contact support if you wish to cancel",
     "forgotPasswordRequestCooldown": "Please wait before requesting a new code",
     "capacityLimitReached": "Sorry, we’ve reached our capacity for today and are unable to take new orders. Please try placing your order again tomorrow",
-    "cancelOrderMidnight": "Order cannot be cancelled after midnight",
+    "cancelOrderMidnight": "Order cannot be cancelled after the allowed time",
     "dailyCancellationLimitReachedTitle": "Daily cancellation limit reached",
     "oneOrderPerDayTitle": "One order per day limit",
-    "capacityLimitReachedTitle": "Capacity limit reached"
+    "capacityLimitReachedTitle": "Capacity limit reached",
+    "orderingDisabledTitle": "Ordering Disabled",
+    "orderingDisabled": "Ordering is currently unavailable. We'll be back soon!",
+    "digitalPaymentFailedTitle": "Payment Failed",
+    "digitalPaymentFailed": "Payment couldn’t be completed. Try again or choose another payment option"
   },
   "changeLanguageModal": {
     "title": "Change language"
@@ -374,5 +389,40 @@
   },
   "productItem": {
     "outOfStockTitle": "Out of Stock"
+  },
+  "permissionModal": {
+    "locationPermissionNeeded": "Location Permission Needed",
+    "locationPermissionDescription": "This app requires location access to function properly. Please enable location permissions in your device settings",
+    "cancelButton": "Cancel",
+    "openSettingsButton": "Open Settings"
+  },
+  "gpsRequiredModal": {
+    "enableLocationServices": "Enable Location Services",
+    "locationServicesDescription": "Your location services (GPS) are currently disabled. Please enable them in your device settings to continue",
+    "cancelButton": "Cancel",
+    "openSettingsButton": "Open Settings"
+  },
+  "whatsNewModal": {
+    "learnMoreButton": "Learn More"
+  },
+  "deliveryCreditModal": {
+    "modalTitle": "How's this fee calculated?",
+    "deliveryFeeTitle": "Delivery Fee",
+    "deliveryDiscountTitle": "Delivery Discount",
+    "deliveryDiscountDescription": "Starting from 2000 DZD, for every 1000 DZD spent on your order, we cover 100 DZD",
+    "orderAmountHeader": "Min. Order Amount",
+    "youSaveTitle": "You Save",
+    "freeDelivery": "Free Delivery",
+    "deliveryFeeDescription": "Delivery fees are determined based on the distance from the customer’s address to our store",
+    "totalTitle": "Total"
+  },
+  "paymentProcessing": {
+    "title": "Complete your payment",
+    "loading": "Loading...",
+    "processingYourPayment": "Processing your payment",
+    "paymentTimeoutTitle": "Payment Timeout",
+    "paymentTimeoutMessage": "Your payment session expired. Please try again",
+    "paymentFailedTitle": "Payment Failed",
+    "paymentFailedMessage": "Payment couldn’t be completed. Try again or choose another payment option"
   }
 }
