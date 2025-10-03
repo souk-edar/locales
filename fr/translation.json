@@ -1,4 +1,14 @@
 {
+  "common": {
+    "error": "Erreur",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "you": "Vous",
+    "openSettings": "Ouvrir les paramètres",
+    "genericError": "Une erreur s'est produite",
+    "close": "Fermer"
+  },
   "home": {
     "welcomeUserMessage": "Bienvenue, {{name}}!",
     "welcomeMessage": "Bienvenue!",
@@ -188,7 +198,7 @@
     "totalTitle": "Total",
     "deliveryAddressTitle": "Adresse de livraison",
     "paymentMethodTitle": "Méthode de paiement",
-    "commentLabel": "Commentaire",
+    "commentLabel": "Ajoute une remarque",
     "commentPlaceholder": "Entrez les détails de la livraison ici",
     "paymentMethodValue": "Paiement en espèces à la livraison",
     "placeOrderButton": "Passer la commande",
@@ -264,6 +274,12 @@
     "digitalPaymentMessage": "Paiement requis une fois la commande emballée",
     "digitalPaymentRequired": "Paiement requis"
   },
+  "cancellationReasons": {
+    "selfClient": "par le client",
+    "clientRequest": "par l'administrateur car le client a demandé l'annulation",
+    "clientDidNotAnswer": "par l'administrateur car le client n'a pas répondu",
+    "other": "par l'administrateur"
+  },
   "orderItem": {
     "swipeToDelete": "Glisser pour supprimer"
   },
@@ -317,7 +333,20 @@
     "refreshing": "Actualisation...",
     "totalAvailableStock": "Stock total disponible :",
     "totalPurchasedStock": "Stock total acheté :",
-    "remainingStock": "Stock restant :"
+    "remainingStock": "Stock restant :",
+    "searchPlaceholder": "Rechercher par nom de produit",
+    "reportSuccess": "Le rapport d'inventaire du {{date}} a été envoyé à {{email}}",
+    "reportEmpty": "Aucun réapprovisionnement enregistré le {{date}}",
+    "reportError": "Échec de génération du rapport pour {{date}}. Veuillez réessayer",
+    "productStockUpdated": "Stock de {{productName}} mis à jour avec succès",
+    "stockUpdated": "Stock mis à jour avec succès",
+    "productHidden": "{{productName}} est désormais masqué",
+    "productAvailable": "{{productName}} est désormais disponible",
+    "outOfStock": "Rupture de stock",
+    "lowStock": "Stock faible",
+    "hidden": "Masqué",
+    "currentStock": "Stock actuel",
+    "lastRestock": "Dernier m.a.j."
   },
   "adminOrderDetails": {
     "title": "Commande n°{{orderId}}",
@@ -326,7 +355,7 @@
     "customerDetails": "Détails du client",
     "telephone": "TEL:",
     "viewReceipt": "Voir le reçu",
-    "cancelOrder": "Annuler la commande",
+    "cancelOrder": "Annuler commande",
     "deliveryAddress": "Adresse de livraison",
     "name": "Nom",
     "quantity": "Qté",
@@ -352,7 +381,17 @@
     "containerPacking": "ID du conteneur d'emballage",
     "itemsToPackTitle": "Articles à emballer",
     "on": "le {{date}}",
-    "status": "Statut : {{status}}"
+    "status": "Statut : {{status}}",
+    "refreshError": "Échec du rafraîchissement de la commande",
+    "profit": "Profit :",
+    "totalPrice": "Prix total :",
+    "totalWeight": "Poids total :",
+    "deliveryDriver": "Livreur",
+    "noDriverAssigned": "Aucun livreur assigné",
+    "changeDriver": "Changer livreur",
+    "assignDriver": "Assigner livreur",
+    "viewNote": "Voir la note",
+    "ePayment": "Paiement électronique : {{totalPrice}} {{currencyCode}}"
   },
   "adminOrderItem": {
     "currentDelivery": "Livraison en cours",
@@ -382,7 +421,21 @@
     "title": "Choisir la langue"
   },
   "cancelOrderModal": {
-    "title": "Êtes-vous sûr de vouloir annuler cette commande?"
+    "title": "Êtes-vous sûr de vouloir annuler cette commande?",
+    "description": "Sélectionnez la raison de l'annulation",
+    "selectReason": "Choisissez une raison",
+    "noteLabel": "Description",
+    "notePlaceholder": "Entrez des informations supplémentaires",
+    "success": "Commande annulée avec succès",
+    "error": "Erreur d'annulation",
+    "reasons": {
+      "clientRequest": "Demande du client",
+      "clientDidNotAnswer": "Le client n'a pas répondu",
+      "other": "Autre"
+    }
+  },
+  "commentModal": {
+    "noteLabel": "Note de la commande"
   },
   "deleteAccountModal": {
     "title": "Êtes-vous sûr de vouloir supprimer votre compte? La suppression de votre compte n'annulera pas les commandes en cours que vous avez. Veuillez nous contacter si vous souhaitez annuler vos commandes"
@@ -424,5 +477,60 @@
     "paymentTimeoutMessage": "Votre session de paiement a expiré. Veuillez réessayer",
     "paymentFailedTitle": "Échec du paiement",
     "paymentFailedMessage": "Le paiement n’a pas pu être effectué. Veuillez réessayer ou choisir un autre mode de paiement"
+  },
+  "inventoryModal": {
+    "visible": "Visible",
+    "hidden": "Masqué",
+    "restock": "Réapprovisionner",
+    "reduction": "Réduction",
+    "quantity": "Quantité",
+    "procurementPrice": "Prix d'achat",
+    "restockInventory": "Réapprovisionner le stock",
+    "removeStock": "Retirer du stock",
+    "recentHistory": "Historique récent ({{count}})",
+    "historyEmpty": "L'historique s'affichera ici",
+    "quantityRequired": "La quantité est obligatoire",
+    "quantityPositive": "Doit être supérieur à 0",
+    "quantityWholeNumber": "Doit être un nombre entier",
+    "priceRequired": "Le prix est obligatoire",
+    "pricePositive": "Le prix doit être supérieur à 0",
+    "history": {
+      "restock": "Réapprovisionnement",
+      "removal": "Retrait"
+    }
+  },
+  "deliveryScreen": {
+    "ordersToDeliver": "Commandes à livrer ({{count}})",
+    "startSuccess": "Livraison démarrée pour la commande n°{{orderNumber}}",
+    "deliveryError": "Erreur de livraison",
+    "errorRequestingLocation": "Erreur lors de la demande de la permission de localisation",
+    "errorGettingLocation": "Erreur lors de la récupération de la position actuelle",
+    "permissionTitle": "Autorisation de localisation requise",
+    "permissionMessage": "L'autorisation de localisation est nécessaire pour démarrer la livraison. Veuillez activer les services de localisation dans les paramètres de votre appareil.",
+    "errorStartingDelivery": "Erreur lors du démarrage de la livraison",
+    "missingCoordinates": "Coordonnées de livraison non disponibles",
+    "storeMarkerTitle": "Magasin",
+    "deliveredMarker": "Livrée - Commande n°{{orderNumber}}",
+    "cancelledMarker": "Commande annulée n°{{orderNumber}}",
+    "orderMarker": "Commande n°{{orderNumber}}",
+    "orderLabel": "Commande n°{{orderNumber}}",
+    "viewOrderPage": "Voir la page de commande",
+    "deliveryInProgress": "Livraison en cours",
+    "orderNotPacked": "Commande pas encore emballée",
+    "startDelivery": "Démarrer la livraison"
+  },
+  "adminOrders": {
+    "prev": "Précédent",
+    "next": "Suivant",
+    "revenue": "Revenu: {{amount}}",
+    "deliveryRevenue": "Revenu livraison: {{amount}}",
+    "profit": "Profit: {{amount}}",
+    "emptyState": "Aucune commande à cette date",
+    "ordersToPackButton": "{{count}} commandes à préparer"
+  },
+  "deliveryDriverSelect": {
+    "title": "Sélectionner un livreur",
+    "assignSuccess": "Livreur assigné à la commande avec succès",
+    "unassignSuccess": "Livreur désassigné de la commande avec succès"
   }
 }
