@@ -1,4 +1,14 @@
 {
+  "common": {
+    "error": "خطأ",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "save": "حفظ",
+    "you": "أنت",
+    "openSettings": "فتح الإعدادات",
+    "genericError": "حدث خطأ ما",
+    "close": "إغلاق"
+  },
   "home": {
     "welcomeUserMessage": "أهلًا وسهلًا، {{name}}",
     "welcomeMessage": "أهلًا وسهلًا",
@@ -188,7 +198,7 @@
     "totalTitle": "الإجمالي",
     "deliveryAddressTitle": "عنوان التوصيل",
     "paymentMethodTitle": "طريقة الدفع",
-    "commentLabel": "تعليق",
+    "commentLabel": "ضف ملاحظة",
     "commentPlaceholder": "أدخل تفاصيل التوصيل هنا",
     "paymentMethodValue": "نقداً عند الاستلام",
     "placeOrderButton": "تقديم الطلب",
@@ -264,6 +274,12 @@
     "digitalPaymentMessage": "يتم الدفع عند تحضير الطلبية",
     "digitalPaymentRequired": "الدفع مستحق"
   },
+  "cancellationReasons": {
+    "selfClient": "من طرف الزبون",
+    "clientRequest": "من طرف المسؤول لأن الزبون طلب الإلغاء",
+    "clientDidNotAnswer": "من طرف المسؤول لأن الزبون لم يرد",
+    "other": "من طرف المسؤول"
+  },
   "orderItem": {
     "swipeToDelete": "مرر للحذف"
   },
@@ -317,7 +333,20 @@
     "refreshing": "تحديث...",
     "totalAvailableStock": "إجمالي المخزون المتاح:",
     "totalPurchasedStock": "إجمالي المخزون المشترى:",
-    "remainingStock": "المخزون المتبقي:"
+    "remainingStock": "المخزون المتبقي:",
+    "searchPlaceholder": "البحث حسب اسم المنتج",
+    "reportSuccess": "تم إرسال تقرير المخزون ليوم {{date}} إلى {{email}}",
+    "reportEmpty": "لم يتم تسجيل أي إعادة تخزين في تاريخ {{date}}",
+    "reportError": "فشل إنشاء التقرير لتاريخ {{date}}. يرجى المحاولة مرة أخرى",
+    "productStockUpdated": "تم تحديث مخزون {{productName}} بنجاح",
+    "stockUpdated": "تم تحديث المخزون بنجاح",
+    "productHidden": "{{productName}} أصبح مخفيًا الآن",
+    "productAvailable": "{{productName}} أصبح متاحًا الآن",
+    "outOfStock": "نفد المخزون",
+    "lowStock": "مخزون منخفض",
+    "hidden": "مخفي",
+    "currentStock": "المخزون الحالي",
+    "lastRestock": "آخر إعادة تخزين"
   },
   "adminOrderDetails": {
     "title": "الطلب رقم {{orderId}}",
@@ -325,19 +354,19 @@
     "placedOn": "تاريخ الطلب:",
     "customerDetails": "تفاصيل الزبون",
     "telephone": "هاتف:",
-    "viewReceipt": "عرض الإيصال",
+    "viewReceipt": "عرض الفاتورة",
     "cancelOrder": "إلغاء الطلب",
     "deliveryAddress": "عنوان التسليم",
     "name": "الاسم",
     "quantity": "الكمية",
-    "uom": "وحدة القياس",
+    "uom": "الوحدة",
     "itemsToPack": "العناصر المراد تعبئتها",
     "checkAll": "تحديد الكل",
-    "packingContainerId": "معرف حاوية التعبئة",
+    "packingContainerId": "رقم حاوية التعبئة",
     "container": "حاوية {{containerId}}",
-    "packingComplete": "اكتمل التعبئة",
+    "packingComplete": "إكمال التعبئة",
     "packingError": "خطأ في التعبئة",
-    "donePacking": "اكتمل التعبئة",
+    "donePacking": "إكمال التعبئة",
     "confirmDelivery": "تأكيد التسليم",
     "orderTotal": "إجمالي الطلب: {{totalPrice}} {{currencyCode}}",
     "enterDeliveryCode": "أدخل الرمز المكون من 4 أرقام لإكمال التسليم",
@@ -352,7 +381,17 @@
     "containerPacking": "معرف حاوية التعبئة",
     "itemsToPackTitle": "العناصر المراد تعبئتها",
     "on": "في {{date}}",
-    "status": "الحالة: {{status}}"
+    "status": "الحالة: {{status}}",
+    "refreshError": "فشل تحديث الطلب",
+    "profit": "الربح:",
+    "totalPrice": "السعر الإجمالي:",
+    "totalWeight": "الوزن الإجمالي:",
+    "deliveryDriver": "سائق التوصيل",
+    "noDriverAssigned": "لم يتم تعيين سائق",
+    "changeDriver": "تغيير السائق",
+    "assignDriver": "تعيين سائق",
+    "viewNote": "عرض الملاحظة",
+    "ePayment": "الدفع الإلكتروني: {{totalPrice}} {{currencyCode}}"
   },
   "adminOrderItem": {
     "currentDelivery": "التسليم الحالي",
@@ -360,7 +399,7 @@
     "orderNumber": "رقم الطلب",
     "status": "الحالة",
     "customerName": "اسم الزبون",
-    "customerEmail": "بريد الزبون الإلكتروني",
+    "customerEmail": "بريد الزبون",
     "viewDetails": "عرض التفاصيل"
   },
   "exceptions": {
@@ -382,7 +421,21 @@
     "title": "اختر اللغة"
   },
   "cancelOrderModal": {
-    "title": "هل أنت متأكد أنك تريد إلغاء هذا الطلب؟"
+    "title": "هل أنت متأكد أنك تريد إلغاء هذا الطلب؟",
+    "description": "اختر سبب الإلغاء",
+    "selectReason": "اختر سببًا",
+    "noteLabel": "الوصف",
+    "notePlaceholder": "أدخل معلومات إضافية",
+    "success": "تم إلغاء الطلب بنجاح",
+    "error": "خطأ في الإلغاء",
+    "reasons": {
+      "clientRequest": "طلب العميل",
+      "clientDidNotAnswer": "العميل لم يجب",
+      "other": "سبب آخر"
+    }
+  },
+  "commentModal": {
+    "noteLabel": "ملاحظة حول الطلب"
   },
   "deleteAccountModal": {
     "title": "هل أنت متأكد أنك تريد حذف حسابك؟ حذف حسابك لن يلغي أي طلبات نشطة لديك. يرجى الاتصال بنا إذا كنت ترغب في إلغاء طلباتك"
@@ -424,5 +477,60 @@
     "paymentTimeoutMessage": "انتهت صلاحية جلسة الدفع الخاصة بك. يرجى المحاولة مرة أخرى",
     "paymentFailedTitle": "فشل الدفع",
     "paymentFailedMessage": "تعذر إتمام الدفع. الرجاء المحاولة مرة أخرى أو اختيار طريقة دفع أخرى"
+  },
+  "inventoryModal": {
+    "visible": "مرئي",
+    "hidden": "مخفي",
+    "restock": "إعادة تخزين",
+    "reduction": "نقصان",
+    "quantity": "الكمية",
+    "procurementPrice": "سعر الشراء",
+    "restockInventory": "إعادة تخزين المخزون",
+    "removeStock": "إزالة من المخزون",
+    "recentHistory": "السجل الأخير ({{count}})",
+    "historyEmpty": "سيظهر السجل هنا",
+    "quantityRequired": "الكمية مطلوبة",
+    "quantityPositive": "يجب أن تكون أكبر من صفر",
+    "quantityWholeNumber": "يجب أن يكون عددًا صحيحًا",
+    "priceRequired": "السعر مطلوب",
+    "pricePositive": "يجب أن يكون السعر أكبر من صفر",
+    "history": {
+      "restock": "إعادة تخزين",
+      "removal": "إزالة"
+    }
+  },
+  "deliveryScreen": {
+    "ordersToDeliver": "طلبات للتسليم ({{count}})",
+    "startSuccess": "تم بدء توصيل الطلب رقم {{orderNumber}}",
+    "deliveryError": "خطأ في التوصيل",
+    "errorRequestingLocation": "خطأ أثناء طلب إذن الموقع",
+    "errorGettingLocation": "خطأ أثناء الحصول على الموقع الحالي",
+    "permissionTitle": "مطلوب إذن الموقع",
+    "permissionMessage": "نحتاج إلى إذن الموقع لبدء التوصيل. يرجى تفعيل خدمات الموقع في إعدادات الجهاز.",
+    "errorStartingDelivery": "خطأ أثناء بدء التوصيل",
+    "missingCoordinates": "إحداثيات موقع التسليم غير متوفرة",
+    "storeMarkerTitle": "المتجر",
+    "deliveredMarker": "تم التسليم - الطلب رقم {{orderNumber}}",
+    "cancelledMarker": "تم إلغاء الطلب رقم {{orderNumber}}",
+    "orderMarker": "الطلب رقم {{orderNumber}}",
+    "orderLabel": "الطلب رقم {{orderNumber}}",
+    "viewOrderPage": "عرض صفحة الطلب",
+    "deliveryInProgress": "التوصيل جارٍ",
+    "orderNotPacked": "الطلب غير مُعبأ بعد",
+    "startDelivery": "بدء التوصيل"
+  },
+  "adminOrders": {
+    "prev": "السابق",
+    "next": "التالي",
+    "revenue": "المداخيل: {{amount}}",
+    "deliveryRevenue": "مداخيل التوصيل: {{amount}}",
+    "profit": "الربح: {{amount}}",
+    "emptyState": "لا توجد طلبات في هذا التاريخ",
+    "ordersToPackButton": "{{count}} طلبيات للتجهيز"
+  },
+  "deliveryDriverSelect": {
+    "title": "اختيار سائق",
+    "assignSuccess": "تم تعيين سائق التوصيل للطلب بنجاح",
+    "unassignSuccess": "تم إلغاء تعيين سائق التوصيل للطلب بنجاح"
   }
 }
