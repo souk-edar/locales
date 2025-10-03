@@ -1,4 +1,14 @@
 {
+  "common": {
+    "error": "Error",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "you": "You",
+    "openSettings": "Open Settings",
+    "genericError": "An error occurred",
+    "close": "Close"
+  },
   "home": {
     "welcomeUserMessage": "Welcome, {{name}}!",
     "welcomeMessage": "Welcome!",
@@ -188,7 +198,7 @@
     "totalTitle": "Total",
     "deliveryAddressTitle": "Delivery Address",
     "paymentMethodTitle": "Payment Method",
-    "commentLabel": "Comment",
+    "commentLabel": "Add a Note",
     "commentPlaceholder": "Enter delivery details here",
     "paymentMethodValue": "Cash on delivery",
     "placeOrderButton": "Place order",
@@ -264,6 +274,12 @@
     "digitalPaymentMessage": "Payment due when order is packed",
     "digitalPaymentRequired": "Payment required"
   },
+  "cancellationReasons": {
+    "selfClient": "by client",
+    "clientRequest": "by admin because client requested cancellation",
+    "clientDidNotAnswer": "by admin because client did not answer",
+    "other": "by admin"
+  },
   "orderItem": {
     "swipeToDelete": "Swipe to delete"
   },
@@ -317,7 +333,20 @@
     "refreshing": "Refreshing...",
     "totalAvailableStock": "Total available stock:",
     "totalPurchasedStock": "Total purchased stock:",
-    "remainingStock": "Remaining stock:"
+    "remainingStock": "Remaining stock:",
+    "searchPlaceholder": "Search by product name",
+    "reportSuccess": "Inventory report for {{date}} has been emailed to {{email}}",
+    "reportEmpty": "No restocks were recorded on {{date}}",
+    "reportError": "Failed to generate report for {{date}}. Please try again",
+    "productStockUpdated": "Stock for {{productName}} successfully updated",
+    "stockUpdated": "Stock successfully updated",
+    "productHidden": "{{productName}} is now hidden",
+    "productAvailable": "{{productName}} is now available",
+    "outOfStock": "Out of stock",
+    "lowStock": "Low stock",
+    "hidden": "Hidden",
+    "currentStock": "Current stock",
+    "lastRestock": "Last restock"
   },
   "adminOrderDetails": {
     "title": "Order n°{{orderId}}",
@@ -352,7 +381,17 @@
     "containerPacking": "Packing container ID",
     "itemsToPackTitle": "Items to pack",
     "on": "on {{date}}",
-    "status": "Status: {{status}}"
+    "status": "Status: {{status}}",
+    "refreshError": "Failed to refresh order",
+    "profit": "Profit:",
+    "totalPrice": "Total price:",
+    "totalWeight": "Total weight:",
+    "deliveryDriver": "Delivery driver",
+    "noDriverAssigned": "No driver assigned",
+    "changeDriver": "Change driver",
+    "assignDriver": "Assign driver",
+    "viewNote": "View note",
+    "ePayment": "E-payment: {{totalPrice}} {{currencyCode}}"
   },
   "adminOrderItem": {
     "currentDelivery": "Current Delivery",
@@ -382,7 +421,21 @@
     "title": "Change language"
   },
   "cancelOrderModal": {
-    "title": "Are you sure you want to cancel this order?"
+    "title": "Are you sure you want to cancel this order?",
+    "description": "Select the reason for cancellation",
+    "selectReason": "Select a reason",
+    "noteLabel": "Description",
+    "notePlaceholder": "Enter additional information",
+    "success": "Order canceled successfully",
+    "error": "Cancellation error",
+    "reasons": {
+      "clientRequest": "Client request",
+      "clientDidNotAnswer": "Client did not answer",
+      "other": "Other"
+    }
+  },
+  "commentModal": {
+    "noteLabel": "Order Note"
   },
   "deleteAccountModal": {
     "title": "Are you sure you want to delete your account? Deleting your account will not cancel any active orders you have. Please contact us if you wish to cancel your orders"
@@ -424,5 +477,60 @@
     "paymentTimeoutMessage": "Your payment session expired. Please try again",
     "paymentFailedTitle": "Payment Failed",
     "paymentFailedMessage": "Payment couldn’t be completed. Try again or choose another payment option"
+  },
+  "inventoryModal": {
+    "visible": "Visible",
+    "hidden": "Hidden",
+    "restock": "Restock",
+    "reduction": "Reduction",
+    "quantity": "Quantity",
+    "procurementPrice": "Procurement price",
+    "restockInventory": "Restock inventory",
+    "removeStock": "Remove stock",
+    "recentHistory": "Recent history ({{count}})",
+    "historyEmpty": "History will be shown here",
+    "quantityRequired": "Quantity is required",
+    "quantityPositive": "Must be greater than 0",
+    "quantityWholeNumber": "Must be a whole number",
+    "priceRequired": "Price is required",
+    "pricePositive": "Price must be greater than 0",
+    "history": {
+      "restock": "Restock",
+      "removal": "Removal"
+    }
+  },
+  "deliveryScreen": {
+    "ordersToDeliver": "Orders to deliver ({{count}})",
+    "startSuccess": "Started delivery for order #{{orderNumber}}",
+    "deliveryError": "Delivery error",
+    "errorRequestingLocation": "Error requesting location permission",
+    "errorGettingLocation": "Error getting current location",
+    "permissionTitle": "Location Permission Required",
+    "permissionMessage": "Location permission is needed to start the delivery. Please enable location services in your device settings.",
+    "errorStartingDelivery": "Error starting delivery",
+    "missingCoordinates": "Delivery location coordinates not available",
+    "storeMarkerTitle": "Store",
+    "deliveredMarker": "Delivered - Order n°{{orderNumber}}",
+    "cancelledMarker": "Cancelled Order n°{{orderNumber}}",
+    "orderMarker": "Order n°{{orderNumber}}",
+    "orderLabel": "Order #{{orderNumber}}",
+    "viewOrderPage": "View order page",
+    "deliveryInProgress": "Delivery in progress",
+    "orderNotPacked": "Order not yet packed",
+    "startDelivery": "Start delivery"
+  },
+  "adminOrders": {
+    "prev": "Prev",
+    "next": "Next",
+    "revenue": "Revenue: {{amount}}",
+    "deliveryRevenue": "Delivery revenue: {{amount}}",
+    "profit": "Profit: {{amount}}",
+    "emptyState": "No orders placed on this date",
+    "ordersToPackButton": "{{count}} Orders to pack"
+  },
+  "deliveryDriverSelect": {
+    "title": "Select driver",
+    "assignSuccess": "Successfully assigned delivery driver to order",
+    "unassignSuccess": "Successfully unassigned delivery driver from order"
   }
 }
